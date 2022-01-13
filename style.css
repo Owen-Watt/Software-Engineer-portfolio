@@ -1,0 +1,143 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* nav bar */
+
+.navBar{
+    border-bottom: 0.5vh solid red;
+    background:white;
+    margin: 0vh;
+    padding: 0vh;
+    position: fixed;
+    width: 100%;
+}
+.navBar a{
+    color: black;
+    text-decoration: none;
+    font-size: 2.5vh;
+}
+.navBar ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+.navBar li{
+    margin: 2vh;
+    transition: all .2s ease-in-out; 
+}
+.navBar li:hover{
+    transform: scale(1.1); 
+}
+.navMenu{
+    display: none;
+}
+
+/* home content */
+.explore{
+    padding-top: 2vh;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name{
+    font-size: 5vh;
+    padding: 1vh;
+}
+.intro{
+    padding: 1vh;
+    font-size: 2.4vh;
+    width: fit;
+    text-align: center;
+}
+
+/* main content */
+.mainBack{
+    padding-top: 15vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(224, 224, 224);
+}
+
+.content{
+    border-radius: 1vh;
+    display: inline-block;
+    border: 0.2vh solid red;
+    height:13vh;
+    width: 90%;
+    font-size: 2.5vh;
+    margin: 2vh;
+    background: white;
+    text-align: center;
+}
+
+/* footer */
+footer{
+    background: #1f1e1e;
+    color: gray;
+    display: flex;
+    padding: 2vh;
+    justify-content: center;
+    font-size: 2vh;
+}
+
+@media only screen and (max-width: 500px) {   /* mobile burger menu */
+    .mainBack{
+        padding-top: 100px;
+    }
+    .navBar{
+        display: none;
+    }
+    .navMenu {
+        display: block;
+        width: 100%;
+        position: fixed;
+        background: rgb(224, 224, 224);
+    }
+    .navMenu #myLinks {
+        text-align: center;
+        display: none;
+        color: rgb(0, 0, 0);
+        border-bottom: 0.3vh solid red;
+    }
+    .navMenu a {
+        padding: 1.4vh 1.6vh;
+        text-decoration: none;
+        font-size: 2.5vh;
+        display: block;
+        color: black;
+    }
+    /* hamburger menu icon */
+    .navMenu a.icon {
+        color: rgb(255, 255, 255);
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .active {
+        background-color: rgb(255, 255, 255);
+        border-bottom: 0.3vh solid red;
+        color: rgb(0, 0, 0);
+    }
+
+    /* intro for mobile */
+    .intro{
+        width: 90%;
+    }
+}
+
