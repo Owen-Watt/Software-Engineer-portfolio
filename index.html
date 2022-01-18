@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>owen.</title>
-    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -16,9 +15,8 @@
         <a class="active">Home</a>
         <div id="myLinks">
             <a href="index.html">Home</a>
-            <a href="pages/projects.html">Projects</a>
-            <a href="pages/resume.html">Resume</a>
-            <a href="pages/contact.html">Contact</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
             <i class="fa fa-bars"></i>
@@ -28,24 +26,107 @@
     <!-- Desktop menu -->
     <div class = "navBar">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/projects.html">Projects</a></li>
-            <li><a href="pages/resume.html">Resume</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="index.html" class = "navBar-links">Home</a></li>
+            <li><a href="projects.html" class = "navBar-links">Projects</a></li>
+            <li><a href="contact.html" class = "navBar-links">Contact</a></li>
         </ul>
     </div>
     
     <div class = "explore">
         <div class = "name">Hi, I'm Owen Watt.</div>
         <div class = "intro">I'm a developer currently studying Computer Science & Software Engineering at Maynooth University, Ireland</div>
+
+        <div class = "home-links">
+            <a href="https://github.com/Owen-Watt" class = "github-home"></a>
+            <a href="https://www.linkedin.com/in/owen-watt-b9334a227" class = "linkedin-home"></a>
+            <a href="https://drive.google.com/file/d/1UgRIr44RC7lpRsPnQtdFCDSElLqlGtbl/view?usp=sharing" class = "resume-home"></a>
+        </div>
+
     </div>
-   
-    <section class = "mainBack">
-        <div class = "content" >Project 1</div>
-        <div class = "content" >Project 2</div>
-        <div class = "content" >Project 3</div>
-    </section>
-    <footer>© Owen Watt</footer>
+
+    <div class = "title-projects">PROJECTS</div>
+
+    <div class = "mainBack" id = "projects-home">
+        <div class = "projects-container">
+            <!-- discord bot project -->
+            <div class = "projects" id="discord">   
+                <div class = "project-image-container">
+                    <div class = "project-image">
+                        <div class = "discord-image"></div>
+                    </div>
+                    <div class = "project-title">Discord Bot</div>
+                </div>
+                
+                <div class = "project-text-container">
+                    <div class = "project-text">A Discord bot for moderation.</div>
+                    <div class = "project-text">Utilized: JavaScript & Node.js</div>
+                    <div class = "project-buttons">
+                        <a href="https://github.com/Owen-Watt/discord-bot">View Code</a>
+                    </div>
+                    <div class = "project-buttons">
+                        <a href="http://127.0.0.1:5500/projects.html">More info</a> <!-- https://owen-watt.github.io/pages/projects.html -->
+                    </div>
+                </div>
+            </div>
+
+            <div class = "mobile-horizontal-line"></div>
+            <!-- this website project-->
+            <div class = "projects" id="website">   
+                <div class = "project-image-container">
+                    <div class = "project-image">
+                        <div class = "website-image"></div>
+                    </div>
+                    <div class = "project-title">This Website</div>
+                </div>
+                <div class = "project-text-container">
+                    <div class = "project-text">A portfolio website.</div>
+                    <div class = "project-text">Utilized: HTML, CSS & JavaScript</div>
+                    <div class = "project-buttons">
+                        <a href="https://github.com/Owen-Watt/owen-watt.github.io">View Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "mobile-horizontal-line"></div>
+        </div>
+        
+        <div class = "projects-container">
+            <div class = "projects">   
+                <div class = "project-image-container">
+                    <div class = "project-image">
+                        <div class = "construction-image"></div>
+                    </div>
+                    <div class = "project-title"></div>
+                </div>
+                
+                <div class = "project-text-container">
+                    <div class = "project-text"></div>
+                    <div class = "project-text"></div>
+                    <div class = "project-text"></div>
+                    <div class = "project-text"></div>
+                </div>
+            </div>
+
+            <div class = "mobile-horizontal-line"></div>
+
+            <div class = "projects">   
+                <div class = "project-image-container">
+                    <div class = "project-image">
+                        <div class = "construction-image"></div>
+                    </div>
+                     <div class = "project-title"></div>
+                </div>
+                
+                <div class = "project-text-container">
+                    <div class = "project-text"></div>
+                    <div class = "project-text"></div>
+                    <div class = "project-text"></div>
+                    <div class = "project-text"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <footer>Copyright © 2022 Owen Watt</footer>
     
 </body>
 </html> 
