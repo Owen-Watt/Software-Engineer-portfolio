@@ -8,6 +8,7 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
     <!-- Mobile menu -->
@@ -15,7 +16,7 @@
         <a class="active">Home</a>
         <div id="myLinks">
             <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
@@ -26,27 +27,29 @@
     <!-- Desktop menu -->
     <div class = "navBar">
         <ul>
-            <li><a href="index.html" class = "navBar-links">Home</a></li>
-            <li><a href="projects.html" class = "navBar-links">Projects</a></li>
-            <li><a href="contact.html" class = "navBar-links">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
     
     <div class = "explore">
         <div class = "name">Hi, I'm Owen Watt.</div>
-        <div class = "intro">I'm a developer currently studying Computer Science & Software Engineering at Maynooth University, Ireland</div>
 
         <div class = "home-links">
             <a href="https://github.com/Owen-Watt" class = "github-home"></a>
             <a href="https://www.linkedin.com/in/owen-watt-b9334a227" class = "linkedin-home"></a>
-            <a href="https://drive.google.com/file/d/1UgRIr44RC7lpRsPnQtdFCDSElLqlGtbl/view?usp=sharing" class = "resume-home"></a>
+            <a href="" class = "resume-home"></a>
         </div>
 
+        <a href="#projects-home" class="arrow-down">
+            <i class='fas fa-angle-double-down' style='font-size:40px;color:black'></i>
+        </a>
     </div>
 
-    <div class = "title-projects">PROJECTS</div>
+    <div class = "title-projects" >PROJECTS</div>
 
-    <div class = "mainBack" id = "projects-home">
+    <div class="contentBack"  id="projects-home">
         <div class = "projects-container">
             <!-- discord bot project -->
             <div class = "projects" id="discord">   
@@ -60,11 +63,13 @@
                 <div class = "project-text-container">
                     <div class = "project-text">A Discord bot for moderation.</div>
                     <div class = "project-text">Utilized: JavaScript & Node.js</div>
-                    <div class = "project-buttons">
-                        <a href="https://github.com/Owen-Watt/discord-bot">View Code</a>
-                    </div>
-                    <div class = "project-buttons">
-                        <a href="http://127.0.0.1:5500/projects.html">More info</a> <!-- https://owen-watt.github.io/pages/projects.html -->
+                    <div class = "project-buttons-container">
+                        <div class = "project-buttons">
+                            <a href="https://github.com/Owen-Watt/discord-bot">View Code</a>
+                        </div>
+                        <div class = "project-buttons">
+                            <a href="">Video Demo</a> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -79,10 +84,12 @@
                     <div class = "project-title">This Website</div>
                 </div>
                 <div class = "project-text-container">
-                    <div class = "project-text">A portfolio website.</div>
+                    <div class = "project-text">Vanilla website made from scratch.</div>
                     <div class = "project-text">Utilized: HTML, CSS & JavaScript</div>
-                    <div class = "project-buttons">
-                        <a href="https://github.com/Owen-Watt/owen-watt.github.io">View Code</a>
+                    <div class = "project-buttons-container">
+                        <div class = "project-buttons">
+                            <a href="https://github.com/Owen-Watt/owen-watt.github.io">View Code</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,7 +120,7 @@
                     <div class = "project-image">
                         <div class = "construction-image"></div>
                     </div>
-                     <div class = "project-title"></div>
+                    <div class = "project-title"></div>
                 </div>
                 
                 <div class = "project-text-container">
@@ -123,10 +130,8 @@
                     <div class = "project-text"></div>
                 </div>
             </div>
-            
         </div>
     </div>
     <footer>Copyright © 2022 Owen Watt</footer>
-    
 </body>
 </html> 
