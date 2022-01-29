@@ -46,6 +46,7 @@ html, body{
 /* home content */
 .explore{
     position: relative;
+    overflow-x:hidden;
     padding-top: 5em;
     height: 55em;
     min-height: 50vh;
@@ -103,6 +104,9 @@ html, body{
     background-color:black;
     color: white;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* home page content */
