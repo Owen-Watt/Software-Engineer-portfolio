@@ -7,7 +7,12 @@ function burgerMenu() {
   }
 }
 
-$(document).ready(function(){
+function homeToProjectScroll(){
+  document.getElementById('projects-home').scrollIntoView();
+}
+
+
+/* $(document).ready(function(){
   // Add smooth scrolling to all links
   $("button").on('click', function(event) {
 
@@ -31,3 +36,4 @@ $(document).ready(function(){
     } // End if
   });
 });
+ */
