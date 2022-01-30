@@ -33,39 +33,32 @@
 
 
     <div class = "contact-contentBack">
-        <div class="container">
-            <div class="row">
-                    <h1>Contact me</h1>
-            </div>
-            <div class="row">
-                    <h4 style="text-align:center">I'd love to hear from you!</h4>
-            </div>
-            <div class="row input-container">
-                <form name="contact" method="POST" data-netlify="true">
-                    <div class="col-xs-12">
-                        <div class="styled-input wide">
-                            <input type="text" id="name" name="subject" required />
-                            <label for="name">Subject</label> 
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="styled-input wide">
-                            <input type="text" id="email" name="email" required />
-                            <label for="email">Email</label> 
-                        </div>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="styled-input wide">
-                            <textarea id="message" name="message" required></textarea>
-                            <label for="message">Message</label>
-                        </div>
-                    </div>
-                    <div class="col-xs-12">
-                        <button class="btn-lrg submit-btn" type="submit">Send Message</button>
-                    </div>
-                </form>
-            </div>
-        </div>    
+        <div class="row">
+                <h1>Contact me</h1>
+        </div>
+        <div class="row">
+                <h4 style="text-align:center">I'd love to hear from you!</h4>
+        </div>
+        <form name="contact" method="POST" data-netlify="true">
+            <div class="input-container">
+                <div class="contact-input">
+                    <input type="text" id="name" name="subject" required />
+                    <label for="name">Subject</label> 
+                </div>
+
+                <div class="contact-input">
+                    <input type="text" id="email" name="email" required />
+                    <label for="email">Email</label> 
+                </div>
+
+                <div class="contact-input">
+                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+
+                <button class="btn-lrg submit-btn" type="submit">Send Message</button>
+            </div> 
+        </form>   
     </div>
 </body>
 </html> 
