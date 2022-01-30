@@ -25,7 +25,7 @@
     </div>
 
     <!-- Desktop menu -->
-    <div class = "navBar">
+    <div class = "navBar" id = "home-navBar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -42,10 +42,7 @@
             <a href="" class = "resume-home"></a>
         </div>
 
-
-        <button class = view-work-button onclick="homeToProjectScroll()">View Work</button>
-
-        
+        <button class = view-work-button onclick="homeToProjectScroll()">View Projects</button>  
     </div>
 
     <div class = "title-projects" >PROJECTS</div>
@@ -65,12 +62,8 @@
                     <div class = "project-text">A Discord bot for moderation.</div>
                     <div class = "project-text">Utilized: JavaScript & Node.js</div>
                     <div class = "project-buttons-container">
-                        <div class = "project-buttons">
-                            <a href="https://github.com/Owen-Watt/discord-bot">View Code</a>
-                        </div>
-                        <div class = "project-buttons">
-                            <a href="">Video Demo</a> 
-                        </div>
+                        <button class = project-buttons onclick="location.href='https\:\/\/github.com/Owen-Watt/discord-bot'" type="button">View Code</button>
+                        <button class = project-buttons onclick="location.href=''" type="button">Video Demo</button>
                     </div>
                 </div>
             </div>
@@ -88,9 +81,7 @@
                     <div class = "project-text">Vanilla website made from scratch.</div>
                     <div class = "project-text">Utilized: HTML, CSS & JavaScript</div>
                     <div class = "project-buttons-container">
-                        <div class = "project-buttons">
-                            <a href="https://github.com/Owen-Watt/owen-watt.github.io">View Code</a>
-                        </div>
+                        <button class = project-buttons onclick="location.href='https\:\/\/github.com/Owen-Watt/owen-watt.github.io'" type="button">View Code</button>
                     </div>
                 </div>
             </div>
