@@ -207,6 +207,9 @@ html, body{
     margin: 0.5rem;
     font-size: 1.5rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: 0.5s;
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -215,6 +218,12 @@ html, body{
 .project-buttons:hover{
     background-color: white;
     color: black;
+}
+.project-buttons img{
+    height: 40px;
+}
+.project-buttons span{
+    margin-left: 10px;
 }
 
 /* about page */
