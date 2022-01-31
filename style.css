@@ -458,6 +458,7 @@ footer{
         align-items: center;
         color: rgb(0, 0, 0);
         font-size: 1.4rem;
+        border-top: 2px solid rgb(143, 143, 143) ;
         border-bottom: 2px solid rgb(143, 143, 143) ;
     }
     .navMenu a {
@@ -480,7 +481,6 @@ footer{
     }
     .active {
         background-color: white;
-        border-bottom: 2px solid rgb(143, 143, 143) ;
         color: rgb(0, 0, 0);
         font-size: 1.4rem;
     }
