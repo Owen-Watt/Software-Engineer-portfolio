@@ -113,12 +113,14 @@ html, body{
     margin-right: auto;/* centers it since it has position: absolute */
     left: 0;    /* centers it since it has position: absolute */
     right: 0;   /* centers it since it has position: absolute */
+    transition: box-shadow 0.2s;
+}
+.view-work-button:hover{
+    box-shadow:0 0px 5px 3px rgba(0, 0, 0, 0.397);
 }
 
 /* home page content */
 .contentBack{
-    padding-top: 2.5em;
-    padding-bottom: 2.75em;
     background-color:#292929;
     width: 100%;
     height:fit-content;
@@ -139,7 +141,7 @@ html, body{
     color: white;
     font-weight: bold;
     background-color:#292929;
-    height: 15rem;
+    height: 200px;
     width: 100%;
     display: flex;
     align-items: center;
