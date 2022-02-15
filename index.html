@@ -9,10 +9,9 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
 <body>
     <!-- Mobile menu -->
-    <div class="navMenu" id="navBar">
+    <div class="navMenu">
         <a class="active">Home</a>
         <div id="myLinks">
             <a href="index.html">Home</a>
@@ -25,7 +24,7 @@
     </div>
 
     <!-- Desktop menu -->
-    <div class = "navBar" id = "home-navBar">
+    <div class = "navBar" id = "navBar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -37,17 +36,17 @@
         <div class = "name">Hi, I'm Owen Watt.</div>
 
         <div class = "home-links">
-            <a href="https://github.com/Owen-Watt" class = "github-home"></a>
-            <a href="https://www.linkedin.com/in/owen-watt-b9334a227" class = "linkedin-home"></a>
-            <a href="" class = "resume-home"></a>
+            <a href="https://github.com/Owen-Watt" id = "github-home"></a>
+            <a href="" id = "resume-home"></a>      
+            <a href="https://www.linkedin.com/in/owen-watt-b9334a227" id = "linkedin-home" ></a>
         </div>
 
         <button class = view-work-button onclick="homeToProjectScroll()">View Projects</button>  
     </div>
 
-    <div class = "title-projects" >Projects</div>
+    <div class = "title-projects" id="projects-home">Projects</div>
 
-    <div class="contentBack"  id="projects-home">
+    <div class="contentBack">
         <div class = "projects-container">
             <!-- discord bot project -->
             <div class = "projects" id="discord">   
@@ -62,11 +61,11 @@
                     <div class = "project-text">A Discord bot for moderation.</div>
                     <div class = "project-text">JavaScript & Node.js</div>
                     <div class = "project-buttons-container">
-                        <a class = project-buttons href='https://github.com/Owen-Watt/discord-bot' type="button">
+                        <a class = project-buttons href='https://github.com/Owen-Watt/discord-bot'>
                             <img src="./images/github.png">
                             <span>Code</span>
                         </a>
-                        <a class = project-buttons href='' type="button">
+                        <a class = project-buttons href=''>
                             <img src="./images/youtube.png">
                             <span>Video Demo</span>
                         </a>
@@ -87,7 +86,7 @@
                     <div class = "project-text">Vanilla website made from scratch.</div>
                     <div class = "project-text">HTML, CSS & JavaScript</div>
                     <div class = "project-buttons-container">
-                        <a class = project-buttons href='https://github.com/Owen-Watt/discord-bot' type="button">
+                        <a class = project-buttons href='https://github.com/Owen-Watt/discord-bot'>
                             <img src="./images/github.png">
                             <span>Code</span>
                         </a>
