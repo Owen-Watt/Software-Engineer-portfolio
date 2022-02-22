@@ -1,31 +1,18 @@
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
+window.onscroll = (() => {
   var navBar = document.getElementById("navBar");
-  /* add shadow to the navbar on scroll */
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    navBar.style.boxShadow = "0 2px 4px 0 rgb(0 52 61 / 12%)";
-  } else {
-    navBar.style.boxShadow = "0 0px 0px 0 rgb(0 0 0 / 0%)";
-  }
 
-  /* change the colour and font colour once scrolled to projects */
-  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
-    navBar.style.backgroundColor = "var(--background-black)";
-    var innerDivs = navBar.getElementsByTagName("A");
-    for(var i = 0; i < innerDivs.length; i++){
-      innerDivs[i].style.color = "white";
-    }
-    navBar.style.borderBottom = "1px solid grey";
+  /* change the height, font colour and shadow of navbar once scrolled */
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    navBar.style.height = "4em";
+    navBar.style.boxShadow = "0 3px 5px rgb(0 0 0 / 0.2)";
   } else {
-    document.getElementById("navBar").style.backgroundColor = "var(--background-gray)";
-    var innerDivs = navBar.getElementsByTagName("A");
-    for(var i = 0; i < innerDivs.length; i++){
-      innerDivs[i].style.color = "black";
-    }
-    navBar.style.border = "0";
+    navBar.style.height = "7em";
+    navBar.style.boxShadow = "0 0px 0px rgb(0 0 0 / 0.0)";
   }
-}
+});
+
+
+
 
 function burgerMenu() {
   var x = document.getElementById("myLinks");
@@ -37,9 +24,8 @@ function burgerMenu() {
 }
 
 function homeToProjectScroll(){
-  const id = 'projects-home';
   const yOffset = -50; 
-  const element = document.getElementById(id);
+  const element = document.getElementById('projects-home');
   const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
   window.scrollTo({top: y, behavior: 'smooth'});

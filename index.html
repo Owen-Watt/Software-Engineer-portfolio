@@ -8,37 +8,43 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
 <body>
     <!-- Mobile menu -->
     <div class="navMenu">
-        <a class="active">Home</a>
-        <div id="myLinks">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+        <div class="mobile-container">
+            <a class="active-page">Home</a>
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
-            <i class="fa fa-bars"></i>
-        </a>
+        
     </div>
 
     <!-- Desktop menu -->
     <div class = "navBar" id = "navBar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="navBar-container">
+            <a href="index.html" class= "navBar-title">&lt;/&gt; Owen Watt</a>
+            <ul>
+                <li><a href="index.html" id = "navBar-links">Home</a></li>
+                <li><a href="about.html" id = "navBar-links">About</a></li>
+                <li><a href="contact.html" id = "navBar-links">Contact</a></li>
+            </ul>
+        </div>
     </div>
     
     <div class = "explore">
         <div class = "name">Hi, I'm Owen Watt.</div>
 
         <div class = "home-links">
-            <a href="https://github.com/Owen-Watt" id = "github-home"></a>
-            <a href="" id = "resume-home"></a>      
-            <a href="https://www.linkedin.com/in/owen-watt-b9334a227" id = "linkedin-home" ></a>
+            <a class = "socials-btn" href="https://github.com/Owen-Watt"><i class="fab fa-fw fa-github"></i></a>
+            <a class = "socials-btn" href=""><i class='fas fa-fw fa-file'></i></a>
+            <a class = "socials-btn" href="https://www.linkedin.com/in/owen-watt-b9334a227"><i class="fab fa-fw fa-linkedin-in"></i></a>
         </div>
 
         <button class = view-work-button onclick="homeToProjectScroll()">View Projects</button>  
@@ -52,22 +58,20 @@
             <div class = "projects" id="discord">   
                 <div class = "project-image-container">
                     <div class = "project-image">
-                        <div class = "discord-image"></div>
-                    </div>
-                    <div class = "project-title">Discord Bot</div>
+                        <i class="fab fa-fw fa-discord"></i>
+                    </div> 
                 </div>
+                <div class = "project-title">Discord Bot</div>
                 
                 <div class = "project-text-container">
                     <div class = "project-text">A Discord bot for moderation.</div>
                     <div class = "project-text">JavaScript & Node.js</div>
                     <div class = "project-buttons-container">
                         <a class = project-buttons href='https://github.com/Owen-Watt/discord-bot'>
-                            <img src="./images/github.png">
-                            <span>Code</span>
+                            <span>Repo</span>
                         </a>
                         <a class = project-buttons href=''>
-                            <img src="./images/youtube.png">
-                            <span>Video Demo</span>
+                            <span>Demo</span>
                         </a>
                     </div>
                 </div>
@@ -78,17 +82,19 @@
             <div class = "projects" id="website">   
                 <div class = "project-image-container">
                     <div class = "project-image">
-                        <div class = "website-image"></div>
+                        <i class="fas fa-fw fa-globe"></i>
                     </div>
-                    <div class = "project-title">This Website</div>
                 </div>
+                <div class = "project-title">This Website</div>
                 <div class = "project-text-container">
                     <div class = "project-text">Vanilla website made from scratch.</div>
                     <div class = "project-text">HTML, CSS & JavaScript</div>
                     <div class = "project-buttons-container">
                         <a class = project-buttons href='https://github.com/Owen-Watt/discord-bot'>
-                            <img src="./images/github.png">
-                            <span>Code</span>
+                            <span>Repo</span>
+                        </a>
+                        <a class = project-buttons href='#'>
+                            <span>Demo</span>
                         </a>
                     </div>
                 </div>
