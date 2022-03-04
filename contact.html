@@ -10,16 +10,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <!-- Mobile menu -->
     <div class="navMenu">
-        <a class="active">Contact</a>
+        <div class="mobile-container" id="mobileNavbar">
+            <a href="index.html" class= "navBar-title-mobile">&lt;/&gt; Owen</a>
+            <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+                <i class="fa fa-bars"></i>
+            </a>  
+        </div>
         <div id="myLinks">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
-            <i class="fa fa-bars"></i>
-        </a>
     </div>
     
     <!-- Desktop menu -->
