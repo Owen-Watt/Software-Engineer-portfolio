@@ -1,3 +1,4 @@
+// when you scroll the function calls
 window.onscroll = (() => {
   var navBar = document.getElementById("navBar");
   var mobilenavbar = document.getElementById("mobileNavbar");
@@ -5,9 +6,9 @@ window.onscroll = (() => {
   /* change the height, font colour and shadow of navbar once scrolled */
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     navBar.style.height = "4em";
-    navBar.style.boxShadow = "0 3px 5px rgb(0 0 0 / 0.2)";
+    navBar.style.boxShadow = "0 2px 5px rgb(0 0 0 / 0.2)";
     mobilenavbar.style.height = "3em";
-    mobilenavbar.style.boxShadow = "0 3px 5px rgb(0 0 0 / 0.2)";
+    mobilenavbar.style.boxShadow = "0 2px 5px rgb(0 0 0 / 0.2)";
   } else {
     navBar.style.height = "7em";
     navBar.style.boxShadow = "0 0px 0px rgb(0 0 0 / 0.0)";
@@ -16,9 +17,7 @@ window.onscroll = (() => {
   }
 });
 
-
-
-
+// function for dropdown menu on mobile
 function burgerMenu() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "flex") {
@@ -28,6 +27,7 @@ function burgerMenu() {
   }
 }
 
+// scrolling found to projects with offset to finish scroll in better place
 function homeToProjectScroll(){
   const yOffset = -50; 
   const element = document.getElementById('projects-home');
