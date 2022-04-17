@@ -164,9 +164,11 @@ html, body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 450px;
+    height: 550px;
     width: 400px;
     padding: 2em;
+    padding-left: 5em;
+    padding-right: 5em
 }
 .project-image-container{
     display: flex;
@@ -214,20 +216,24 @@ html, body{
 }
 .project-buttons{
     color: black;
-    background-color: white;
+    background: white;
     text-decoration: none;
     padding: 0.1em 0.4em;
-    border: 0;
+    border: 2px solid white;
     height: fit-content;
     width: fit-content;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 0.5rem;
     font-size: 1.5rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.5s;
+    transition: all 0.3s;
+}
+.project-buttons:hover{
+    background: none;
+    color: white;
 }
 .project-software-container{
     padding-top: 1em;
@@ -249,9 +255,28 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.5s;
+    transition: 0.2s;
 }
-
+#javascript:hover{
+    background-color: yellow;
+    color: black;
+}
+#css:hover{
+    background-color: #2965f1;
+    color: white;
+}
+#html:hover{
+    background-color: #F16529;
+    color: white;
+}
+#mongo:hover{
+    background-color: #4DB33B;
+    color: black;
+}
+#node:hover{
+    background-color: #3c873a;
+    color: white; 
+}
 /* about page */
 .about-contentBack{
     padding-top: 6em;
