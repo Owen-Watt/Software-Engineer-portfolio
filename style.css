@@ -215,8 +215,8 @@ html, body{
     justify-content: center;
 }
 .project-buttons{
-    color: black;
-    background: white;
+    color: white;
+    background: none;
     text-decoration: none;
     padding: 0.1em 0.4em;
     border: 2px solid white;
@@ -232,8 +232,8 @@ html, body{
     transition: all 0.3s;
 }
 .project-buttons:hover{
-    background: none;
-    color: white;
+    background: white;
+    color: black;
 }
 .project-software-container{
     padding-top: 1em;
