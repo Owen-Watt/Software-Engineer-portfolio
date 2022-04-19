@@ -256,6 +256,10 @@ html, body{
     align-items: center;
     justify-content: center;
     transition: 0.2s;
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
 }
 #javascript:hover{
     background-color: yellow;
