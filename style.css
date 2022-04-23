@@ -526,13 +526,8 @@ footer{
     .project-projects{
         width: 90%;
     }
-    .project-buttons{
-        background-color: white;
-    }
-    .discordWelcome-image{
-        width: 80%;
-    }
-    .discordCommand-image{
+
+    .project-text-container{
         width: 80%;
     }
     .mobile-horizontal-line{
