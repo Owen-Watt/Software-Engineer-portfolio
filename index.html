@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Owen Watt</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../javascript/script.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+<body>
+    <!-- Mobile menu -->
+    <div class="navMenu">
+        <div class="mobile-container" id="mobileNavbar">
+            <a href="index.html" class= "navBar-title-mobile">&lt;/&gt; Owen</a>
+            <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+                <i class="fa fa-bars"></i>
+            </a>  
+        </div>
+        <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="resume.html">Resume</a>
+        </div>
+    </div>
+
+    <!-- Desktop menu -->
+    <div class = "navBar" id = "navBar">
+        <div class="navBar-container">
+            <a href="index.html" class= "navBar-title">&lt;/&gt; Owen Watt</a>
+            <ul>
+                <li><a href="index.html" id = "navBar-links">Home</a></li>
+                <li><a href="about.html" id = "navBar-links">About</a></li>
+                <li><a href="resume.html" id = "navBar-links">Resume</a></li>
+                <li><a href="contact.html" id = "navBar-links">Contact</a></li>
+
+            </ul>
+        </div>
+    </div>
+    
+    <div class = "explore">
+        <div class = "name">Hi, I'm Owen Watt.</div>
+
+        <div class = "home-links">
+            <a class = "socials-btn" href="https://github.com/Owen-Watt"><i class="fab fa-fw fa-github"></i></a>
+            <a class = "socials-btn" href=""><i class='fas fa-fw fa-file'></i></a>
+            <a class = "socials-btn" href="https://www.linkedin.com/in/owen-watt-b9334a227"><i class="fab fa-fw fa-linkedin-in"></i></a>
+        </div>
+
+        <button class = view-work-button onclick="homeToProjectScroll()">View Projects</button>  
+    </div>
+
+    <div class = "title-projects" id="projects-home">Projects</div>
+
+    <div class="contentBack">
+        <div class = "projects-container">
+            <!-- discord bot project -->
+            <div class = "projects" id="discord">   
+                <div class = "project-image-container">
+                    <div class = "project-image">
+                        <i class="fab fa-fw fa-discord"></i>
+                    </div> 
+                </div>
+                <div class = "project-title">Discord Bot</div>
+                
+                <div class = "project-text-container">
+                    <div class = "project-text">A Discord bot with custom commands that utilises a database to keep track of statistics.</div>
+                    <div class = "project-software-container">
+                        <a class = project-software id="javascript">JavaScript</a>
+                        <a class = project-software id="node">Node.js</a>
+                        <a class = project-software id="mongo">MongoDB</a>
+                    </div>
+                    <div class = "project-buttons-container">
+                        <a class = project-buttons href='https://github.com/Owen-Watt/discord-bot'>GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "mobile-horizontal-line"></div>
+
+            <!-- portfolio website project-->
+            <div class = "projects" id="website">   
+                <div class = "project-image-container">
+                    <div class = "project-image">
+                        <i class="fas fa-fw fa-globe"></i>
+                    </div>
+                </div>
+                <div class = "project-title">Portfolio Website</div>
+                <div class = "project-text-container">
+                    <div class = "project-text">Portfolio website made from scratch.<br></div>
+                    <div class = "project-software-container">
+                        <a class = project-software id="html">HTML</a>
+                        <a class = project-software id="css">CSS</a>
+                        <a class = project-software id="javascript">JavaScript</a>
+                    </div>
+                    <div class = "project-buttons-container">
+                        <a class = project-buttons href='https://github.com/Owen-Watt/Portfolio-website'>GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "mobile-horizontal-line"></div>
+        </div>
+        
+        <div class = "projects-container" style="margin-top: 100px; margin-bottom: 100px;">
+            <!-- placeholder project -->
+            <div class = "projects" id="discord">   
+                <div class = "project-image-container">
+                    <div class = "project-image">
+                        <i class="fas fa-fw fa-flag"></i>
+                    </div> 
+                </div>
+                <div class = "project-title">Title</div>
+                
+                <div class = "project-text-container">
+                    <div class = "project-text">Description</div>
+                    <div class = "project-software-container">
+                        <a class = project-software>software</a>
+                        <a class = project-software>software</a>
+                        <a class = project-software>software</a>
+                    </div>
+                    <div class = "project-buttons-container">
+                        <a class = project-buttons href='https://github.com/Owen-Watt/'>GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "mobile-horizontal-line"></div>
+
+            <!-- placeholder project -->
+            <div class = "projects" id="discord">   
+                <div class = "project-image-container">
+                    <div class = "project-image">
+                        <i class="fas fa-fw fa-flag"></i>
+                    </div> 
+                </div>
+                <div class = "project-title">Title</div>
+                
+                <div class = "project-text-container">
+                    <div class = "project-text">Description</div>
+                    <div class = "project-software-container">
+                        <a class = project-software>software</a>
+                        <a class = project-software>software</a>
+                        <a class = project-software>software</a>
+                    </div>
+                    <div class = "project-buttons-container">
+                        <a class = project-buttons href='https://github.com/Owen-Watt/'>GitHub<i class="fas-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class = "mobile-horizontal-line"></div>
+        </div>
+    </div>
+    <footer>© 2022 Owen Watt</footer>
+</body>
+</html> 
