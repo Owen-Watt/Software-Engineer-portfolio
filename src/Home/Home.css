@@ -1,0 +1,89 @@
+.explore{
+    position: relative;
+    height: 55em;
+    min-height: 100vh;
+/*     height: 10vh; */
+    width: 100%;
+    display: flex;
+    background-color: #f3f3f3;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name{
+    font-size: 3rem;
+    padding: 0.5em;
+}
+.home-links{
+    margin: 1em;
+    display: flex;
+    align-items: center;
+}
+.socials-btn{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    border: 2px solid black;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: black;
+    transition: all 0.2s;
+}
+.socials-btn:hover{
+    color: white;
+    background-color: black;
+}
+.view-work-button{
+    position: absolute;
+    height: 3.5rem;
+    width: 12rem;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    background-color:#f3f3f3;
+    color: black;
+    cursor: pointer;
+    bottom: 100px;
+    margin-left: auto;  /* centers it since it has position: absolute */
+    margin-right: auto;/* centers it since it has position: absolute */
+    left: 0;    /* centers it since it has position: absolute */
+    right: 0;   /* centers it since it has position: absolute */
+    transition: all 0.3s;
+}
+.view-work-button:hover{
+    background-color: black;
+    color: white;
+}
+
+/* home page content */
+.contentBack{
+    background-color:#212529;
+    width: 100%;
+    height:fit-content;
+    min-height: 41.7vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: white;
+}
+
+@media only screen and (max-width: 820px) {   
+    .explore{
+        height: 45rem;
+        min-height: 90vh;
+        width: 100%;
+    }
+    .name{
+        font-size: 2.25rem;
+    }
+    .intro{
+        font-size: 1.5rem;
+    }
+}
