@@ -1,9 +1,15 @@
 import '../index.css';
 import './Contact.css';
+import React, { useEffect } from 'react';
+
 
 function Contact() {
+    useEffect(() => {
+        document.title = "Contact | Owen Watt"
+    }, []);
+
   return (
-    <>
+    <> 
     <div className = "contact-contentBack">
         <div className="row">
             <h1>Contact me</h1>

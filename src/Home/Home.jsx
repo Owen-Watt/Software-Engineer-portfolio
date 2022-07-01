@@ -4,8 +4,13 @@ import './Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { faFile, faGlobe, faFlag } from '@fortawesome/free-solid-svg-icons'
+import React, { useEffect } from 'react';
 
 function Home() {
+  useEffect(() => {
+    document.title = "Home | Owen Watt"
+  }, []);
+
   return (
     <>
       <div className = "explore">
