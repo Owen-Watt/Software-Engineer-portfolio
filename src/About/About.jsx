@@ -1,14 +1,16 @@
 import '../index.css';
 import './About.css';
-import React, { useEffect } from 'react';
+import { Helmet } from "react-helmet";
 
 function About() {
-  useEffect(() => {
-    document.title = "About | Owen Watt"
-  }, []);
+
   
   return (
     <>
+    <Helmet>
+      <title>About | Owen Watt</title>
+    </Helmet>
+
     <div className = "about-contentBack">
 
     </div>

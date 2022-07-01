@@ -1,15 +1,15 @@
 import '../index.css';
 import './Contact.css';
-import React, { useEffect } from 'react';
+import { Helmet } from "react-helmet";
 
 
 function Contact() {
-    useEffect(() => {
-        document.title = "Contact | Owen Watt"
-    }, []);
-
   return (
     <> 
+    <Helmet>
+        <title>Contact | Owen Watt</title>
+    </Helmet>
+
     <div className = "contact-contentBack">
         <div className="row">
             <h1>Contact me</h1>
