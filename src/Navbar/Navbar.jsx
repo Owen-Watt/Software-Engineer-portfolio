@@ -1,6 +1,8 @@
 import { useEffect, React } from 'react';
 import { Link } from "react-router-dom";
 import './Navbar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
   useEffect(() => {
@@ -34,7 +36,7 @@ function Navbar() {
           <div className="mobile-container" id="mobileNavbar">
               <Link to="/" className= "navBar-title-mobile">&lt;/&gt; Owen</Link>
               <button className="icon" onClick={burgerMenu}>
-                  <i className="fa fa-bars"></i>
+                <FontAwesomeIcon icon={faBars} />
               </button>  
           </div>
           <div id="myLinks">
