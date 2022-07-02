@@ -7,6 +7,7 @@ import Home from "./Home/Home";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
 import Resume from "./Resume/Resume";
+import NotFound from "./NotFound/NotFound"
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="about" element={<About />}/>
           <Route path="contact" element={<Contact />} />
           <Route path="resume" element={<Resume />} />
+          <Route path="*" element ={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

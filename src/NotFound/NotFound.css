@@ -1,0 +1,35 @@
+.background{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #f3f3f3;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homePage-button{
+    position: absolute;
+    height: 4rem;
+    width: 16rem;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    background-color:#f3f3f3;
+    color: black;
+    bottom: 20%;
+    margin-left: auto;  /* centers it since it has position: absolute */
+    margin-right: auto;/* centers it since it has position: absolute */
+    left: 0;    /* centers it since it has position: absolute */
+    right: 0;   /* centers it since it has position: absolute */
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.homePage-button:hover{
+    background-color: black;
+    color: white;
+}
