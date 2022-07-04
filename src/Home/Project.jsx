@@ -29,7 +29,7 @@ function Projects(props) {
                     <div className = "project-software">{props.software[2]}</div>
                 </div>
                 <div className = "project-buttons-container">
-                    <button className = "project-buttons" href={props.github}>GitHub<FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" style={{marginLeft:"10px"}}/></button>
+                    <a className = "project-buttons" href={props.github}>GitHub<FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" style={{marginLeft:"10px"}}/></a>
                 </div>
             </div>
         </div>

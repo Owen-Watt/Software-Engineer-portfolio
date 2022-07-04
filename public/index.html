@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="../src/index.css">
   </head>
   <body>
+    <form name="contact" netlify netlify-honeypot="bot-field" action="/" hidden>
+      <input type="text" id="name" name="subject" required />
+      <input type="text" id="email" name="email" required />
+      <textarea id="message" name="message" required></textarea>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>

@@ -14,7 +14,8 @@ function Contact() {
         <div className="row">
             <h1>Contact me</h1>
         </div>
-        <form name="contact" method="POST" data-netlify="true" autoComplete="off">
+        <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
             <div className="input-container">
                 <div className="contact-input">
                     <input type="text" id="name" name="subject" required />
