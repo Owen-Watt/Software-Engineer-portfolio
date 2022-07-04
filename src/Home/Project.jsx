@@ -2,11 +2,18 @@ import '../index.css';
 import './Project.css'
 import './Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 function Projects(props) {
-  return (
+    useEffect(() =>{
+        Aos.init({ duration: 750 });
+    }, []);
+
+    return (
     <>
-        <div className = "projects">   
+        <div className = "projects" data-aos={props.fade}>   
             <div className = "project-image-container">
                 <div className = "project-image">
                     <FontAwesomeIcon icon={props.icon} />

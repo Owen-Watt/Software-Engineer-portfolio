@@ -37,6 +37,7 @@ function Home() {
               description="A Discord bot with custom commands that utilises a database to keep track of statistics."
               software={["Javascript", "Node.js", "MongoDB"]}
               github='https://github.com/Owen-Watt/discord-bot'
+              fade="fade-right"
             />
 
             <div className = "mobile-horizontal-line"></div>
@@ -47,6 +48,7 @@ function Home() {
               description="Portfolio website made from scratch with React.js to display my portfolio."
               software={["HTML", "CSS", "React"]}
               github='https://github.com/Owen-Watt/Portfolio-website'
+              fade="fade-left"
             />
 
             <div className = "mobile-horizontal-line"></div>
@@ -57,6 +59,7 @@ function Home() {
               description="Description"
               software={["software", "software", "software"]}
               github='https://github.com/Owen-Watt/'
+              fade="fade-right"
             />
 
             <div className = "mobile-horizontal-line"></div>
@@ -67,6 +70,7 @@ function Home() {
               description="Description"
               software={["software", "software", "software"]}
               github='https://github.com/Owen-Watt/'
+              fade="fade-left"
             />
         </div>
       </div>
