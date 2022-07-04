@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { faFile, faGlobe, faFlag } from '@fortawesome/free-solid-svg-icons'
 import { Helmet } from "react-helmet";
+import { Link } from "react-scroll";
 import Project from './Project'
 
 function Home() {
@@ -23,7 +24,7 @@ function Home() {
               <a href="https://www.linkedin.com/in/owen-watt-b9334a227" className = "socials-btn"><FontAwesomeIcon icon={faLinkedinIn} /></a>
           </div>
     
-          <button className = "view-work-button" onClick={homeToProjectScroll}>View Projects</button>  
+          <Link to="projects-home" spy={true} smooth={true} offset={-40} duration={10} className = "view-work-button">View Projects</Link>  
       </div>
     
       <div className = "title-projects" id="projects-home">Projects</div>
@@ -75,12 +76,12 @@ function Home() {
 }
 
 // scrolling found to projects with offset to finish scroll in better place
-function homeToProjectScroll(){
+/* function homeToProjectScroll(){
   const yOffset = -50; 
   const element = document.getElementById('projects-home');
   const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
   window.scrollTo({top: y, behavior: 'smooth'});
-}
+} */
 
 export default Home;

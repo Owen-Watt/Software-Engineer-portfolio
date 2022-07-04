@@ -39,6 +39,9 @@
 }
 .view-work-button{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 3.5rem;
     width: 12rem;
     border-radius: 5px;
