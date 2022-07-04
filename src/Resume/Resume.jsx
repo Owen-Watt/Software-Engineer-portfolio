@@ -2,8 +2,6 @@ import '../index.css';
 import { Helmet } from "react-helmet";
 
 function Resume() {
-
-
   return (
     <>
     <Helmet>
@@ -13,7 +11,6 @@ function Resume() {
     <div className = "about-contentBack">
 
     </div>
-    
     </>
   );
 }

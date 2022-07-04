@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 function Projects(props) {
     useEffect(() =>{
@@ -28,7 +29,7 @@ function Projects(props) {
                     <div className = "project-software">{props.software[2]}</div>
                 </div>
                 <div className = "project-buttons-container">
-                    <a className = "project-buttons" href={props.github}>GitHub</a>
+                    <button className = "project-buttons" href={props.github}>GitHub<FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" style={{marginLeft:"10px"}}/></button>
                 </div>
             </div>
         </div>

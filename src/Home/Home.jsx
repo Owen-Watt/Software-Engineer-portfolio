@@ -79,13 +79,4 @@ function Home() {
   );
 }
 
-// scrolling found to projects with offset to finish scroll in better place
-/* function homeToProjectScroll(){
-  const yOffset = -50; 
-  const element = document.getElementById('projects-home');
-  const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-
-  window.scrollTo({top: y, behavior: 'smooth'});
-} */
-
 export default Home;

@@ -6,7 +6,6 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
   useEffect(() => {
-
     const onScroll = () => {
       var navBar = document.getElementById("navBar");
       var mobilenavbar = document.getElementById("mobileNavbar");

@@ -12,7 +12,7 @@ function About() {
     </Helmet>
 
     <div className = "about-contentBack">
-
+      
     </div>
     
     </>
