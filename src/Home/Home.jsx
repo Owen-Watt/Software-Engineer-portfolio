@@ -24,7 +24,7 @@ function Home() {
               <a href="https://www.linkedin.com/in/owen-watt-b9334a227" className = "socials-btn"><FontAwesomeIcon icon={faLinkedinIn} /></a>
           </div>
     
-          <Link to="projects-home" spy={true} smooth={true} offset={-40} duration={10} className = "view-work-button">View Projects</Link>  
+          <Link to="projects-home" spy={true} smooth={true} offset={-10} duration={10} className = "view-work-button">View Projects</Link>  
       </div>
     
       <div className = "title-projects" id="projects-home">Projects</div>
