@@ -2,7 +2,6 @@ import '../index.css';
 import './Contact.css';
 import { Helmet } from "react-helmet";
 
-
 function Contact() {
   return (
     <> 

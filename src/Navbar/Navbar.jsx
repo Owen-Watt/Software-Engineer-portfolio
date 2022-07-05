@@ -1,10 +1,24 @@
-import { useEffect, React } from 'react';
+import { useEffect, React, useState } from 'react';
 import { Link } from "react-router-dom";
 import './Navbar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  let menu;
+  if(showMenu){
+    menu =
+    <div id="myLinks">
+      <Link to="/" onClick={() => setShowMenu(!showMenu)}>Home</Link>
+      <div className="burger-line"></div>
+      <Link to="/about" onClick={() => setShowMenu(!showMenu)}>About</Link>
+      <div className="burger-line"></div>
+      <Link to="/resume" onClick={() => setShowMenu(!showMenu)}>Resume</Link>
+      <div className="burger-line"></div>
+      <Link to="/contact" onClick={() => setShowMenu(!showMenu)}>Contact</Link>
+    </div>
+  }
+
   useEffect(() => {
     const onScroll = () => {
       var navBar = document.getElementById("navBar");
@@ -34,23 +48,18 @@ function Navbar() {
       <div className="navMenu">
           <div className="mobile-container" id="mobileNavbar">
               <Link to="/" className= "navBar-title-mobile">&lt;/&gt; Owen</Link>
-              <button className="icon" onClick={burgerMenu}>
-                <FontAwesomeIcon icon={faBars} />
+              <button className={showMenu ? 'icon open' : 'icon'} onClick={() => setShowMenu(!showMenu)}>
+                <div className="menu-burger"></div>
               </button>  
           </div>
-          <div id="myLinks">
-              <Link to="/">Home</Link>
-              <Link to="/about">About</Link>
-              <Link to="/resume">Contact</Link>
-              <Link to="/contact">Resume</Link>
-          </div>
+          { menu }
       </div>
 
       <div className = "navBar" id = "navBar">
           <div className="navBar-container">
               <Link to="/" className="navBar-title">&lt;/&gt; Owen Watt</Link>
               <ul>
-                  <li><Link to="/" id = "navBar-links">Home</Link></li>
+                  <li><Link to="/" id = "navBar-links" >Home</Link></li>
                   <li><Link to="/about" id = "navBar-links">About</Link></li>
                   <li><Link to="/resume" id = "navBar-links">Resume</Link></li>
                   <li><Link to="/contact" id = "navBar-links">Contact</Link></li>
@@ -59,16 +68,6 @@ function Navbar() {
       </div>
     </>
   );
-}
-
-// function for dropdown menu on mobile
-function burgerMenu() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "flex";
-  }
 }
 
 export default Navbar
