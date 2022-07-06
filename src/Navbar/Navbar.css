@@ -139,8 +139,8 @@
         align-items: center;
         position: relative;
         top: 25px;
-        transition: all var(--mobile-animation-time) ease-in-out;
-        transition-delay: 0.1s
+        transition: all 0.35s ease-in-out;
+        transition-delay: 0.125s
 
     }
     .link a{
@@ -151,7 +151,6 @@
         display: flex;
         align-items: center;
     }
-
     .links-closed{
         display: flex;
         height: 0vh;
@@ -159,12 +158,11 @@
         background-color: var(--background-gray);
     }
     .link-hidden{
-        visibility: hidden;
         opacity: 0;
+        transform: translateY(-100px);
     }
     .links-open{
         display: flex;
-        visibility: visible;
         animation: var(--mobile-animation-time) ease-in-out 0s 1 Open-Menu;
     }
     @keyframes Open-Menu {
