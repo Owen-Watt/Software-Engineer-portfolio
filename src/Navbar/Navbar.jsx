@@ -8,15 +8,12 @@ function Navbar() {
   let menu;
   if(showMenu){
     menu =
-    <div id="myLinks">
-      <Link to="/" onClick={() => setShowMenu(!showMenu)}>Home</Link>
-      <div className="burger-line"></div>
-      <Link to="/about" onClick={() => setShowMenu(!showMenu)}>About</Link>
-      <div className="burger-line"></div>
-      <Link to="/resume" onClick={() => setShowMenu(!showMenu)}>Resume</Link>
-      <div className="burger-line"></div>
-      <Link to="/contact" onClick={() => setShowMenu(!showMenu)}>Contact</Link>
-    </div>
+    <ul className="link-container">
+      <li className="link home"><Link to="/" onClick={() => setShowMenu(!showMenu)}>Home</Link></li>
+      <li className="link about" ><Link to="/about"onClick={() => setShowMenu(!showMenu)}>About</Link></li>
+      <li className="link resume" ><Link to="/resume"onClick={() => setShowMenu(!showMenu)}>Resume</Link></li>
+      <li className="link contact" ><Link to="/contact"onClick={() => setShowMenu(!showMenu)}>Contact</Link></li>
+    </ul>
   }
 
   useEffect(() => {
@@ -46,7 +43,7 @@ function Navbar() {
   return (
     <>
       <div className="navMenu">
-          <div className="mobile-container" id="mobileNavbar">
+          <div className={showMenu ? 'mobile-container navbar-open' : 'mobile-container'} id="mobileNavbar">
               <Link to="/" className= "navBar-title-mobile">&lt;/&gt; Owen</Link>
               <button className={showMenu ? 'icon open' : 'icon'} onClick={() => setShowMenu(!showMenu)}>
                 <div className="menu-burger"></div>
