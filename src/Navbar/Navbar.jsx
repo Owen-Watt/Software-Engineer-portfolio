@@ -5,16 +5,11 @@ import './Navbar.css';
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
-  let menu;
+  /* let menu;
   if(showMenu){
     menu =
-    <ul className="link-container">
-      <li className="link home"><Link to="/" onClick={() => setShowMenu(!showMenu)}>Home</Link></li>
-      <li className="link about" ><Link to="/about"onClick={() => setShowMenu(!showMenu)}>About</Link></li>
-      <li className="link resume" ><Link to="/resume"onClick={() => setShowMenu(!showMenu)}>Resume</Link></li>
-      <li className="link contact" ><Link to="/contact"onClick={() => setShowMenu(!showMenu)}>Contact</Link></li>
-    </ul>
-  }
+    
+  } */
 
   useEffect(() => {
     const onScroll = () => {
@@ -43,13 +38,18 @@ function Navbar() {
   return (
     <>
       <div className="navMenu">
-          <div className={showMenu ? 'mobile-container navbar-open' : 'mobile-container'} id="mobileNavbar">
+          <div className={showMenu ? 'mobile-container navbar-open' : 'mobile-container navbar-closed'} id="mobileNavbar">
               <Link to="/" className= "navBar-title-mobile">&lt;/&gt; Owen</Link>
               <button className={showMenu ? 'icon open' : 'icon'} onClick={() => setShowMenu(!showMenu)}>
                 <div className="menu-burger"></div>
               </button>  
           </div>
-          { menu }
+          <ul className={showMenu ? 'link-container links-open' : 'link-container links-closed'}>
+            <li className={showMenu ? 'link home' : 'link home link-hidden'}><Link to="/" onClick={() => setShowMenu(!showMenu)}>Home</Link></li>
+            <li className={showMenu ? 'link about' : 'link about link-hidden'} ><Link to="/about"onClick={() => setShowMenu(!showMenu)}>About</Link></li>
+            <li className={showMenu ? 'link resume' : 'link resume link-hidden'} ><Link to="/resume"onClick={() => setShowMenu(!showMenu)}>Resume</Link></li>
+            <li className={showMenu ? 'link contact' : 'link contact link-hidden'} ><Link to="/contact"onClick={() => setShowMenu(!showMenu)}>Contact</Link></li>
+          </ul>
       </div>
 
       <div className = "navBar" id = "navBar">

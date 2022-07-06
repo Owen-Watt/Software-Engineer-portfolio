@@ -106,18 +106,68 @@
             background-color: rgb(233, 233, 233);
         }
     }
+    .navbar-closed{
+        background-color:var(--background-gray);
+        animation: var(--mobile-animation-time) ease-in-out 0s 1 Reverse-Navbar-colour;
+    }
+    @keyframes Reverse-Navbar-colour {
+        0% {
+            background-color: rgb(233, 233, 233);
+        }
+        90% {
+            background-color: var(--background-gray);
+        }
+    }
     .link-container {
-        display: flex;
+        display: none;
         position: relative;
         flex-direction: column;
         align-items: center;
         font-size: 1.5rem;
-        animation: var(--mobile-animation-time) ease-in-out 0s 1 menuDropDown;
         background:rgb(233, 233, 233);
         height: 100vh;
         margin: 0;
+        transition: all var(--mobile-animation-time) ease-in-out;
+        overflow:hidden
     }
-    @keyframes menuDropDown {
+    .link{
+        color: black;
+        width: 100%;
+        height: 50px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 25px;
+        transition: all var(--mobile-animation-time) ease-in-out;
+        transition-delay: 0.1s
+
+    }
+    .link a{
+        width: 90%;
+        height: 100%;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+    }
+
+    .links-closed{
+        display: flex;
+        height: 0vh;
+        visibility: hidden;
+        background-color: var(--background-gray);
+    }
+    .link-hidden{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .links-open{
+        display: flex;
+        visibility: visible;
+        animation: var(--mobile-animation-time) ease-in-out 0s 1 Open-Menu;
+    }
+    @keyframes Open-Menu {
         0% {
             height: 0;
             background-color: var(--background-gray)
@@ -129,40 +179,6 @@
             height: 100vh;
             background-color: rgb(233, 233, 233);
         }
-    }
-    .link-container li{
-        color: black;
-        width: 100%;
-        height: 50px;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        animation: var(--mobile-animation-time) ease-in-out 0s 1 opacityAnimation;
-    }
-    @keyframes opacityAnimation {
-        0% {
-            opacity: 0;
-            transform: translateY(-100%);
-        }
-        35%{
-            opacity: 0;
-        }
-        70% {
-            opacity: 1;
-            transform: translateY(0%);
-        }
-    }
-    .link{
-        position: relative;
-        top: 25px;
-    }
-    .link a{
-        width: 90%;
-        height: 100%;
-        text-decoration: none;
-        color: black;
-        display: flex;
-        align-items: center;
     }
     .about::before,
     .resume::before,
