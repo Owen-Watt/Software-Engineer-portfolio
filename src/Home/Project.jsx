@@ -4,7 +4,7 @@ import './Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 function Projects(props) {
@@ -12,9 +12,18 @@ function Projects(props) {
         Aos.init({ duration: 750 });
     }, []);
 
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
+
+    useEffect(() => {
+        window.addEventListener("resize", () => {
+            const ismobile = window.innerWidth < 1200;
+            if (ismobile !== isMobile) setIsMobile(ismobile);
+        }, false);
+    }, [isMobile]);
+    
     return (
     <>
-        <div className = "projects" data-aos={props.fade}>   
+        <div className={`${isMobile ? "mobile-projects" : `projects ${props.margin}`}`} data-aos={props.fade}>   
             <div className = "project-image-container">
                 <div className = "project-image">
                     <FontAwesomeIcon icon={props.icon} />

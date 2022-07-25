@@ -29,50 +29,52 @@ function Home() {
     
       <div className = "title-projects" id="projects-home">Projects</div>
       
-      <div className="contentBack">
-        <div className = "projects-container">
-            <Project
-              icon={faDiscord}
-              title="Discord Bot"
-              description="A Discord bot with custom commands that utilises a database to keep track of statistics."
-              software={["Javascript", "Node.js", "MongoDB"]}
-              github='https://github.com/Owen-Watt/discord-bot'
-              fade="fade-right"
-            />
+      <div className = "projects-wrapper">
+          <Project
+            icon={faDiscord}
+            title="Discord Bot"
+            description="A Discord bot with custom commands that utilises a database to keep track of user statistics."
+            software={["Javascript", "Node.js", "MongoDB"]}
+            github='https://github.com/Owen-Watt/discord-bot'
+            fade="fade-right"
+            margin="mr-50"
+          />
 
-            <div className = "mobile-horizontal-line"></div>
+          <div className = "mobile-horizontal-line"></div>
 
-            <Project
-              icon={faGlobe}
-              title="Portfolio Website"
-              description="Portfolio website made from scratch with React.js to display my portfolio."
-              software={["HTML", "CSS", "React"]}
-              github='https://github.com/Owen-Watt/Portfolio-website'
-              fade="fade-left"
-            />
+          <Project
+            icon={faGlobe}
+            title="Portfolio Website"
+            description="Portfolio website made from scratch with React.js to display my portfolio."
+            software={["HTML", "CSS", "React"]}
+            github='https://github.com/Owen-Watt/Portfolio-website'
+            fade="fade-left"
+            margin="ml-50"
+          />
 
-            <div className = "mobile-horizontal-line"></div>
+          <div className = "mobile-horizontal-line"></div>
 
-            <Project
-              icon={faFlag}
-              title="Title"
-              description="Description"
-              software={["software", "software", "software"]}
-              github='https://github.com/Owen-Watt/'
-              fade="fade-right"
-            />
+          <Project
+            icon={faFlag}
+            title="Title"
+            description="Description"
+            software={["software", "software", "software"]}
+            github='https://github.com/Owen-Watt/'
+            fade="fade-right"
+            margin="mr-50"
+          />
 
-            <div className = "mobile-horizontal-line"></div>
+          <div className = "mobile-horizontal-line"></div>
 
-            <Project
-              icon={faFlag}
-              title="Title"
-              description="Description"
-              software={["software", "software", "software"]}
-              github='https://github.com/Owen-Watt/'
-              fade="fade-left"
-            />
-        </div>
+          <Project
+            icon={faFlag}
+            title="Title"
+            description="Description"
+            software={["software", "software", "software"]}
+            github='https://github.com/Owen-Watt/'
+            fade="fade-left"
+            margin="ml-50"
+          />
       </div>
       <footer>© 2022 Owen Watt</footer>
     </>
