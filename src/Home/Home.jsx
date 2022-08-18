@@ -33,7 +33,7 @@ function Home() {
           <Project
             icon={faDiscord}
             title="Discord Bot"
-            description="A Discord bot with custom commands that utilises a database to keep track of user statistics."
+            description="A Discord bot with custom commands that utilises a database to keep track of settings & statistics."
             software={["Javascript", "Node.js", "MongoDB"]}
             github='https://github.com/Owen-Watt/discord-bot'
             fade="fade-right"
