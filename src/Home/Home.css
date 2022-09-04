@@ -3,12 +3,16 @@
     height: 55em;
     min-height: 100vh;
 /*     height: 10vh; */
+    background: #f3f3f3;
     width: 100%;
     display: flex;
-    background-color: #f3f3f3;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.svg-wave{
+    position: absolute;
+    bottom: 0;
 }
 .name{
     font-size: 3rem;
@@ -37,6 +41,7 @@
     color: white;
     background-color: black;
 }
+
 .view-work-button{
     position: absolute;
     display: flex;
@@ -50,15 +55,17 @@
     background-color:#f3f3f3;
     color: black;
     cursor: pointer;
-    bottom: 100px;
+    bottom: 200px;
     margin-left: auto;  /* centers it since it has position: absolute */
     margin-right: auto;/* centers it since it has position: absolute */
     left: 0;    /* centers it since it has position: absolute */
     right: 0;   /* centers it since it has position: absolute */
     transition: all 0.3s;
+    user-select: none;
 }
 .view-work-button:hover{
-    background-color: black;
+    background-color: var(--background-black);
+    border: 2px solid var(--background-black);
     color: white;
 }
 
