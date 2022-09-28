@@ -1,9 +1,10 @@
 :root{
     --mobile-animation-time: 0.5s;
+    --navbar-font-color: black;
 }
 
 .navBar{
-    background: #f3f3f3;
+    background: var(--theme-color);
     transition: all 0.4s;
     margin: 0;
     padding: 0;
@@ -14,15 +15,15 @@
     box-shadow:0;
 }
 .navBar-container{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .navBar-title{
-    color: black;
+    color: var(--navbar-font-color);
     font-size: 1.4rem;
     text-decoration: none;
     user-select: none; /* supported by Chrome and Opera */
@@ -42,7 +43,7 @@
     position: relative;
 }
 #navBar-links{
-    color: black;
+    color: var(--navbar-font-color);
     font-size: 1.3rem;
     text-decoration: none;
     transition: all 0.3s;
@@ -95,27 +96,28 @@
         font-size:1.5rem ;
     }
     .navbar-open{
-        background-color:rgb(233, 233, 233);
+        background-color: var(--background-gray);
         animation: var(--mobile-animation-time) ease-in-out 0s 1 changeNavbarColour;
     }
     @keyframes changeNavbarColour {
         0% {
-            background-color: var(--background-gray)
+            background-color:var(--theme-color);
         }
         20% {
-            background-color: rgb(233, 233, 233);
+            background-color: var(--background-gray);
         }
     }
     .navbar-closed{
-        background-color:var(--background-gray);
+        background-color:var(--theme-color);
         animation: var(--mobile-animation-time) ease-in-out 0s 1 Reverse-Navbar-colour;
     }
     @keyframes Reverse-Navbar-colour {
         0% {
-            background-color: rgb(233, 233, 233);
+            background-color: var(--background-gray);
+            
         }
         90% {
-            background-color: var(--background-gray);
+            background-color:var(--theme-color);
         }
     }
     .link-container {
@@ -155,7 +157,7 @@
         display: flex;
         height: 0vh;
         visibility: hidden;
-        background-color: var(--background-gray);
+        background-color: var(--theme-color);
     }
     .link-hidden{
         opacity: 0;
@@ -163,28 +165,27 @@
     }
     .links-open{
         display: flex;
+        background-color: var(--background-gray);
         animation: var(--mobile-animation-time) ease-in-out 0s 1 Open-Menu;
     }
     @keyframes Open-Menu {
         0% {
             height: 0;
-            background-color: var(--background-gray)
+            background-color: var(--theme-color)
         }
         25%{
-            background-color: rgb(233, 233, 233);
+            background-color: var(--background-gray);
         }
         100% {
             height: 100vh;
-            background-color: rgb(233, 233, 233);
+            background-color: var(--background-gray);
         }
     }
-    .about::before,
-    .resume::before,
-    .contact::before{
+    .link::before{
         width: 90%;
         height: 1px;
-        background: rgb(129, 129, 129);
-        transform: translateY(-25px);
+        background: rgb(0, 0, 0);
+        transform: translateY(25px);
         content: '';
         position: absolute;
     }

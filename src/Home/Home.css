@@ -3,7 +3,7 @@
     height: 55em;
     min-height: 100vh;
 /*     height: 10vh; */
-    background: #f3f3f3;
+    background: var(--theme-color);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -17,29 +17,32 @@
 .name{
     font-size: 3rem;
     padding: 0.5em;
+    color: var(--font-color)
 }
 .home-links{
     margin: 1em;
     display: flex;
     align-items: center;
+    gap: 50px;
 }
 .socials-btn{
-    width: 4rem;
-    height: 4rem;
+    min-width: 2em;
+    height: 2em;
     font-size: 2rem;
-    border: 2px solid black;
-    margin-left: 25px;
-    margin-right: 25px;
+    border: 2px solid var(--font-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
-    color: black;
+    border-radius: 50px;
+    color: var(--font-color);
     transition: all 0.2s;
+    text-decoration: none;
+    gap: 10px;
 }
+
 .socials-btn:hover{
-    color: white;
-    background-color: black;
+    color: var(--theme-color);
+    background-color: var(--font-color);
 }
 
 .view-work-button{
@@ -50,10 +53,10 @@
     height: 3.5rem;
     width: 12rem;
     border-radius: 5px;
-    border: 2px solid black;
+    border: 2px solid var(--font-color);
     font-size: 1.5rem;
-    background-color:#f3f3f3;
-    color: black;
+    background-color:var(--theme-color);
+    color: var(--font-color);
     cursor: pointer;
     bottom: 200px;
     margin-left: auto;  /* centers it since it has position: absolute */
@@ -64,9 +67,9 @@
     user-select: none;
 }
 .view-work-button:hover{
-    background-color: var(--background-black);
-    border: 2px solid var(--background-black);
-    color: white;
+    background-color: var(--content-gray);
+    border: 2px solid var(--content-gray);
+    color: var(--theme-color);
 }
 
 /* home page content */

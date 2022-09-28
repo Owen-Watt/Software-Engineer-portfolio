@@ -1,6 +1,5 @@
-import '../index.css';
 import './Project.css'
-import './Home.css'
+import '../Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -12,11 +11,12 @@ function Projects(props) {
         Aos.init({ duration: 750 });
     }, []);
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1100);
 
     useEffect(() => {
         window.addEventListener("resize", () => {
-            const ismobile = window.innerWidth < 1200;
+            const ismobile = window.innerWidth < 1100;
+            // if not already in mobile mode, set it to mobile mode
             if (ismobile !== isMobile) setIsMobile(ismobile);
         }, false);
     }, [isMobile]);
@@ -39,6 +39,7 @@ function Projects(props) {
                 </div>
                 <div className = "project-buttons-container">
                     <a className = "project-buttons" href={props.github}>GitHub<FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" style={{marginLeft:"10px"}}/></a>
+                    <a className = "project-buttons" href={props.demo}>{props.demoType}<FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" style={{marginLeft:"10px"}}/></a>
                 </div>
             </div>
         </div>

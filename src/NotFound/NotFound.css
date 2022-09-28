@@ -3,7 +3,7 @@
     min-height: 100vh;
     width: 100%;
     display: flex;
-    background-color: #f3f3f3;
+    background-color: var(--theme-color);
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -16,7 +16,7 @@
     border-radius: 5px;
     border: 2px solid black;
     font-size: 1.5rem;
-    background-color:#f3f3f3;
+    background-color: var(--theme-color);
     color: black;
     bottom: 20%;
     margin-left: auto;  /* centers it since it has position: absolute */
