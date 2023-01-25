@@ -15,7 +15,7 @@ function NotFound() {
     <div className = "background">
       <h1>404</h1>
       <p>Page does not exist.</p>
-      <Link to="/" className = "homePage-button">Return to Homepage</Link>
+      <Link to="/" className = "homePage-button">Return to Home page</Link>
     </div>
     
     </>

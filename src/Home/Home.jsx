@@ -1,8 +1,8 @@
 import '../index.css';
 import './Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedinIn, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons'
-import { faHouse, faCloud, faQuestion, faFile } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedinIn, faGithub, faDiscord, faSpotify } from '@fortawesome/free-brands-svg-icons'
+import { faHouse, faCloud, faFile } from '@fortawesome/free-solid-svg-icons'
 import { Helmet } from "react-helmet";
 import { Link } from "react-scroll";
 import Project from './Project/Project'
@@ -45,15 +45,15 @@ function Home() {
           <div className = "mobile-horizontal-line"></div>
 
           <Project
-            icon={faHouse}
-            title="Portfolio Website"
-            description="Portfolio website made from scratch with React.js to display my portfolio."
-            software={["HTML", "CSS", "React.js"]}
-            github='https://github.com/Owen-Watt/Portfolio-website'
+            icon={faSpotify}
+            title="Spotify Statistics"
+            description="Displays a users Top Spotify tracks & artists. Allows users to create playlists with their top tracks."
+            software={["Spotify API", "Tailwind CSS", "React.js"]}
+/*             github='https://github.com/Owen-Watt/Portfolio-website' */
             fade="fade-left"
             margin="ml-50"
-            demo="https://owenwatt.dev"
-            demoType="Demo"
+            demo="https://spotifyscope.com"
+            demoType="Website"
           />
 
           <div className = "mobile-horizontal-line"></div>
@@ -61,7 +61,7 @@ function Home() {
           <Project
             icon={faCloud}
             title="Discord Bot Website"
-            description="Website to display useful information about the bot & display data from an API."
+            description="Displays useful information about the bot & display data from an API."
             software={["HTML", "CSS", "React.js"]}
             github='https://github.com/Owen-Watt/Discord-bot-website'
             fade="fade-right"
@@ -73,11 +73,11 @@ function Home() {
           <div className = "mobile-horizontal-line"></div>
 
           <Project
-            icon={faQuestion}
-            title="Template"
-            description="Description"
-            software={["Software", "Software", "Software"]}
-            github='https://github.com/Owen-Watt/'
+            icon={faHouse}
+            title="Portfolio Website"
+            description="Portfolio website made from scratch with React.js to display my portfolio."
+            software={["HTML", "CSS", "React.js"]}
+            github='https://github.com/Owen-Watt/Portfolio-website'
             fade="fade-left"
             margin="ml-50"
             demo="https://owenwatt.dev"

@@ -15,11 +15,8 @@ function About() {
         <div className="about-container">
           <div className="title">About</div>
           <div className="description">
-            I am a 20 year old college student in my 3rd year studying 
-            Computer Science & Software engineering at Maynooth University, Ireland.<br></br>
-
-            <br></br>
-            I am looking for an internship from late January to August (6 months).
+          I am a 21-year-old college student enrolled at Maynooth University 
+          in Ireland where I am currently in my third year of computer science and software engineering.
           </div>
         </div>
 
