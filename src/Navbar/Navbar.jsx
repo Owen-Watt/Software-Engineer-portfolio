@@ -48,7 +48,7 @@ function Navbar() {
           <ul className={showMenu ? 'link-container links-open' : 'link-container links-closed'}>
             <li className={showMenu ? 'link' : 'link link-hidden'}><Link to="/" onClick={() => setShowMenu(!showMenu)}>Home</Link></li>
             <li className={showMenu ? 'link' : 'link link-hidden'} ><Link to="/about"onClick={() => setShowMenu(!showMenu)}>About</Link></li>
-            <li className={showMenu ? 'link' : 'link link-hidden'} ><a href="/assets/Owen_Watt_CV.pdf" onClick={() => setShowMenu(!showMenu)}>Resume</a></li>
+{/*             <li className={showMenu ? 'link' : 'link link-hidden'} ><a href="/assets/Owen_Watt_CV.pdf" onClick={() => setShowMenu(!showMenu)}>Resume</a></li> */}
             <li className={showMenu ? 'link' : 'link link-hidden'} ><Link to="/contact"onClick={() => setShowMenu(!showMenu)}>Contact</Link></li>
           </ul>
       </div>
@@ -59,7 +59,7 @@ function Navbar() {
               <ul>
                   <li><Link to="/" id = "navBar-links" >Home</Link></li>
                   <li><Link to="/about" id = "navBar-links">About</Link></li>
-                  <li><a href="/assets/Owen_Watt_CV.pdf" id = "navBar-links" >Resume</a></li>
+{/*                   <li><a href="/assets/Owen_Watt_CV.pdf" id = "navBar-links" >Resume</a></li> */}
                   <li><Link to="/contact" id = "navBar-links">Contact</Link></li>
               </ul>
           </div>

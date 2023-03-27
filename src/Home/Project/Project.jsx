@@ -44,7 +44,7 @@ function Projects({ icon, margin, description, title, software, github, demo, de
                             GitHub<FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" style={{marginLeft:"10px"}}/>
                         </a>
                     }
-                    <a className = "project-buttons" href={demo}>{demoType}
+                    <a className = "project-buttons" href={demo} target="_blank" rel="noreferrer">{demoType} 
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" style={{marginLeft:"10px"}}/>
                     </a>
                 </div>
