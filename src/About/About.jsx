@@ -1,41 +1,24 @@
 import './About.css';
 import { Helmet } from "react-helmet";
-import Skill from "./Skill/Skill"
+import nestor from "../Nestor-Diaz.png"
 
-function About() {
-
-  
+function About() {  
   return (
     <>
       <Helmet>
-        <title>About | Owen Watt</title>
+        <title>About | Nestor Diaz</title>
       </Helmet>
 
       <div className="about-contentBack">
         <div className="about-container">
-          <div className="title">About</div>
+          <div className="title">About Me</div>
           <div className="description">
-          I am a 21-year-old college student enrolled at Maynooth University, where I am studying computer science. 
-          <br></br>I am currently interning as a Software Developement Engineer (SDE) at Amazon.
+          Born in El Salvador and migrated to the U.S when I was only 7yrs old. I was taught to work hard for what you want in life. 
+          At the age of 19 I purchased my first home and now at the age of 22 I will be purchasing my 2nd home. 
+          I can help you achieve the American Dream just as I have. If you want a hard-working bilingual agent look no further.
           </div>
         </div>
-
-        <div className="about-container">
-          <div className="title">Skills</div>
-          <div className="skills-wrapper">
-            <Skill name="HTML"></Skill>
-            <Skill name="CSS"></Skill>
-            <Skill name="Javascript"></Skill>
-            <Skill name="Java"></Skill>
-            <Skill name="React"></Skill>
-          </div>
-          <div className="skills-wrapper">
-            <Skill name="PostgreSQL"></Skill>
-            <Skill name="mongoDB"></Skill>
-            <Skill name="Heroku"></Skill>
-            <Skill name="Node"></Skill>
-          </div>    
-        </div>
+        <img src={nestor} className="about-image rounded-xl" alt="Nestor Diaz" />
       </div>
     </>
   );

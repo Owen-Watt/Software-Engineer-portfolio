@@ -1,7 +1,7 @@
 .mobile-horizontal-line{
     display: none;
 }
-.title-projects{
+.title-community{
     font-size:3rem;
     color: white;
     background-color:#212529;
@@ -11,13 +11,13 @@
     align-items: center;
     justify-content: center;
 }
-.projects{
+.community{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 550px;
-    width: 450px;
+    width: 480px;
     padding: 2em;
     border-radius: 10px;
     margin: auto;
@@ -26,7 +26,8 @@
     box-shadow: rgba(0, 0, 0, 0.5) 0px 22px 50px 1px;
     background-color: #252a2e;
 }
-.mobile-projects{
+.mobile-community{
+    background-color: #252a2e;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,7 +47,7 @@
 .mr-50{
     margin-right: 50px;
 }
-.project-image-container{
+.community-image-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,51 +57,53 @@
     border: 2px solid white;
     border-radius: 100%;
 }
-.project-image{
-    width: 8rem;
-    height: 8rem;
+.community-image{
+    width: 24rem;
+    height: 15rem;
     font-size: 5rem;
     display: flex;
     align-items: center;
     justify-content: center; 
+    border-radius: 10px;
 }
-.project-title{
+.community-title{
     padding-top: 1em;
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
     width: fit-content;
 }
-.project-text-container{
+.community-text-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: left;
     width: 100%;
     height: fit-content;
 }
-.project-text{
+.community-text{
     margin: 0.25em;
-    font-size: 1.25rem;
-    min-height: 60px; /* min height to make things even on both sides */
+    font-size: 1.1rem;
+    height: 125px; /* min height to make things even on both sides */
     display:flex;
 }
-.project-buttons-container{
+.community-buttons-container{
     padding-top: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.project-buttons{
+.community-buttons{
     color: white;
     background: none;
     text-decoration: none;
-    padding: 0.1em 0.4em;
-    border: 2px solid white;
+    padding: 0.3em 0.7em;
+    border: 1px solid white;
     height: fit-content;
     width: fit-content;
     border-radius: 5px;
     margin: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -111,16 +114,17 @@
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
 }
-.project-buttons:hover{
-    opacity: 60%;
+.community-buttons:hover{
+    background: white;
+    color: #252a2e;
 }
-.project-software-container{
+.community-software-container{
     padding-top: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.project-software{
+.community-software{
     color: white;
     background-color: rgb(70, 70, 70);
     text-decoration: none;
@@ -138,21 +142,21 @@
 
 
 @media only screen and (max-width: 913px) { 
-    .projects{
+    .community{
         width: 90%;
         margin: auto;
         height: fit-content;
         box-shadow: none;
         background-color: #212529;
     }
-    .project-text-container{
+    .community-text-container{
         width: 100%;
         border-radius: 1vh;
     }
-    .project-projects{
+    .community-community{
         width: 90%;
     }
-    .project-text-container{
+    .community-text-container{
         width: 80%;
     }
     .mobile-horizontal-line{

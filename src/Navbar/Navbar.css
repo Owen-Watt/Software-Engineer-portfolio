@@ -1,10 +1,10 @@
 :root{
     --mobile-animation-time: 0.5s;
-    --navbar-font-color: black;
+    --navbar-font-color: white;
 }
 
 .navBar{
-    background: var(--theme-color);
+    background: transparent;
     transition: all 0.4s;
     margin: 0;
     padding: 0;
@@ -25,6 +25,9 @@
 .navBar-title{
     color: var(--navbar-font-color);
     font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     text-decoration: none;
     user-select: none; /* supported by Chrome and Opera */
     -webkit-user-select: none; /* Safari */
@@ -53,9 +56,10 @@
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
+    border: 1px solid transparent;
 }
 #navBar-links:hover { 
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 8px 0px;
+    border: 1px solid white;
 }
 .navMenu{
     display: none;

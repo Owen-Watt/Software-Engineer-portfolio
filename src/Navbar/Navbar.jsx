@@ -1,6 +1,8 @@
 import { useEffect, React, useState } from 'react';
 import { Link } from "react-router-dom";
 import './Navbar.css';
+import { faHomeLgAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -40,27 +42,25 @@ function Navbar() {
     <>
       <div className="navMenu">
           <div className={showMenu ? 'mobile-container navbar-open' : 'mobile-container navbar-closed'}  style={mobile}>
-              <Link to="/" className= "navBar-title-mobile">&lt;/&gt; Owen</Link>
+              <Link to="/" className= "navBar-title-mobile">Nestor Diaz</Link>
               <button className={showMenu ? 'icon open' : 'icon'} onClick={() => setShowMenu(!showMenu)}>
                 <div className="menu-burger"></div>
               </button>  
           </div>
           <ul className={showMenu ? 'link-container links-open' : 'link-container links-closed'}>
             <li className={showMenu ? 'link' : 'link link-hidden'}><Link to="/" onClick={() => setShowMenu(!showMenu)}>Home</Link></li>
-            <li className={showMenu ? 'link' : 'link link-hidden'} ><Link to="/about"onClick={() => setShowMenu(!showMenu)}>About</Link></li>
-{/*             <li className={showMenu ? 'link' : 'link link-hidden'} ><a href="/assets/Owen_Watt_CV.pdf" onClick={() => setShowMenu(!showMenu)}>Resume</a></li> */}
-            <li className={showMenu ? 'link' : 'link link-hidden'} ><Link to="/contact"onClick={() => setShowMenu(!showMenu)}>Contact</Link></li>
+            <li className={showMenu ? 'link' : 'link link-hidden'} ><Link to="/communities" onClick={() => setShowMenu(!showMenu)}>Communities</Link></li>
+            <li className={showMenu ? 'link' : 'link link-hidden'} ><Link to="/about" onClick={() => setShowMenu(!showMenu)}>About Me</Link></li>
           </ul>
       </div>
 
-      <div className = "navBar" style={desktop}>
+      <div className = "navBar bg-neutral-100 bg-opacity-20 backdrop-blur" style={desktop}>
           <div className="navBar-container">
-              <Link to="/" className="navBar-title">&lt;/&gt; Owen Watt</Link>
+              <Link to="/" className="navBar-title"><FontAwesomeIcon icon={faHomeLgAlt} />Nestor Diaz</Link>
               <ul>
-                  <li><Link to="/" id = "navBar-links" >Home</Link></li>
-                  <li><Link to="/about" id = "navBar-links">About</Link></li>
-{/*                   <li><a href="/assets/Owen_Watt_CV.pdf" id = "navBar-links" >Resume</a></li> */}
-                  <li><Link to="/contact" id = "navBar-links">Contact</Link></li>
+                  <li><Link to="/" id = "navBar-links">Home</Link></li>
+                  <li><Link to="/communities" id = "navBar-links">Communities</Link></li>
+                  <li><Link to="/about" id = "navBar-links">About Me</Link></li>
               </ul>
           </div>
       </div>

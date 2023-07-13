@@ -1,0 +1,175 @@
+.mobile-horizontal-line{
+    display: none;
+}
+.title-projects{
+    font-size:3rem;
+    color: white;
+    background-color:#212529;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: 450px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 22px 50px 1px;
+    background-color: #252a2e;
+    
+}
+.mobile-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.ml-50{
+    margin-left: 50px;
+}
+.mr-50{
+    margin-right: 50px;
+}
+.project-image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+    transition: 0.2s;
+}
+.projects:hover .project-image-container{
+    opacity: 75%;
+}
+.projects:hover .project-title{
+    color: #212529;
+    background: white;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+.project-image{
+    width: 8rem;
+    height: 8rem;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.project-title{
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    transition: 0.25s;
+}
+.project-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+.project-text{
+    margin: 0.25em;
+    font-size: 1.25rem;
+    min-height: 60px; /* min height to make things even on both sides */
+    display:flex;
+}
+.project-buttons-container{
+    padding-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-buttons{
+    color: white;
+    background: none;
+    text-decoration: none;
+    padding: 0.1em 0.4em;
+    border: 2px solid white;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+.project-buttons:hover{
+    opacity: 60%;
+}
+.project-software-container{
+    padding-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-software{
+    color: white;
+    background-color: rgb(70, 70, 70);
+    text-decoration: none;
+    padding: 0.2em 0.5em;
+    border: 0;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 0.5rem;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 913px) { 
+    .projects{
+        width: 90%;
+        margin: auto;
+        height: fit-content;
+        box-shadow: none;
+        background-color: #212529;
+    }
+    .project-text-container{
+        width: 100%;
+        border-radius: 1vh;
+    }
+    .project-projects{
+        width: 90%;
+    }
+    .project-text-container{
+        width: 80%;
+    }
+    .mobile-horizontal-line{
+        display: block;
+        width: 90%;
+        background-color:white;
+        height: 0.2vh;
+    }
+}
