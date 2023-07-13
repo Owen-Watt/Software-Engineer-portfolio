@@ -3,22 +3,12 @@
     height: 55em;
     min-height: 100vh;
 /*     height: 10vh; */
-    /* background: var(--theme-color); */
-/*     background-image: url("../house.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
-
-    /* Add the blur effect */
-/*     filter: blur(8px);
-    -webkit-filter: blur(8px); */
+    background: var(--theme-color);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url("../house.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
 }
 .svg-wave{
     position: absolute;
@@ -26,19 +16,11 @@
 }
 .name{
     font-size: 3rem;
-    color: var(--font-color)
-}
-
-.name-subheader{
-    font-size: 1.75rem;
-    text-align: center;
-    color: var(--font-color)
-}
-.name-footer{
-    font-size: 1rem;
+    padding: 0.5em;
     color: var(--font-color)
 }
 .home-links{
+    margin: 1em;
     display: flex;
     align-items: center;
     gap: 50px;
@@ -59,17 +41,21 @@
 }
 
 .socials-btn:hover{
-    background: var(--content-gray);
+    color: var(--theme-color);
+    background-color: var(--font-color);
 }
+
 .view-work-button{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 3.5rem;
-    width: 300px;
+    width: 12rem;
     border-radius: 5px;
-    border: 1px solid var(--font-color);
+    border: 2px solid var(--font-color);
     font-size: 1.5rem;
+    background-color:var(--theme-color);
     color: var(--font-color);
     cursor: pointer;
     bottom: 200px;
@@ -77,12 +63,13 @@
     margin-right: auto;/* centers it since it has position: absolute */
     left: 0;    /* centers it since it has position: absolute */
     right: 0;   /* centers it since it has position: absolute */
-    transition: all 0.2s;
+    transition: all 0.3s;
     user-select: none;
 }
-
 .view-work-button:hover{
-    background: var(--content-gray);
+    background-color: var(--content-gray);
+    border: 2px solid var(--content-gray);
+    color: var(--theme-color);
 }
 
 /* home page content */
@@ -114,9 +101,6 @@
     }
     .name{
         font-size: 2.25rem;
-    }
-    .name-subheader{
-        font-size: 1.5em;
     }
     .intro{
         font-size: 1.5rem;

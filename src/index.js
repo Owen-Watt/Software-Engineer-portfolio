@@ -5,21 +5,19 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeLayout from "./Layout";
 import Home from "./Home/Home";
 import About from "./About/About";
+import Contact from "./Contact/Contact";
 import NotFound from "./NotFound/NotFound"
 import ScrollToTop from "./ScrollToTop";
-import Communities from './Communities/Communities';
 
 export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
-        <Route path='/'>
-          <Route index element={<Home />} />
-        </Route>
         <Route path="/" element={<HomeLayout />}>
+          <Route index element={<Home />} />
           <Route path="about" element={<About />}/>
-          <Route path="communities" element={<Communities />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="*" element ={<NotFound />} />
         </Route>
       </Routes>

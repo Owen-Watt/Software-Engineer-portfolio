@@ -3,13 +3,13 @@
     width: 100%;
     height: fit-content;
     min-height: 100vh;
-    background: var(--content-gray);
-    color: white;
+    background: var(--theme-color);
+    color: black;
     display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
 }
 .title{
     text-align: left;
@@ -20,13 +20,11 @@
     text-align: left;
     font-size: 1.5em;
 }
-.about-image{
-    height: 22rem;
-}
 .about-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: black;
     height: fit-content;
     width: 900px;
     border-radius: 10px;
@@ -44,6 +42,7 @@
     align-items: center;
     padding: 15px;
     border-radius: 5px;
+    color: black;
     background: white;
     box-shadow: 0 1px 2px rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
     margin: 10px 0px;
