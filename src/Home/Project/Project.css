@@ -21,7 +21,7 @@
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 22px 50px 1px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 15px 1px;
 }
 .mobile-projects{
     display: flex;
@@ -50,7 +50,7 @@
     justify-content: center;
     width: 10rem;
     height: 10rem;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 100%;
 }
 .project-image{
@@ -88,11 +88,11 @@
     justify-content: center;
 }
 .project-buttons{
-    color: white;
+    color: black;
     background: none;
     text-decoration: none;
     padding: 0.1em 0.4em;
-    border: 2px solid white;
+    border: 2px solid black;
     height: fit-content;
     width: fit-content;
     border-radius: 5px;

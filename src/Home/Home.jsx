@@ -15,21 +15,20 @@ function Home() {
         <title className="">Home | Owen Watt</title>
       </Helmet>
 
-      <div className = "explore bg-gradient-to-b from-white via-blue-100 to-blue-200">
+      <div className = "explore bg-[rgba(232,232,232,1)]">
        <div className = "name" data-aos="fade-down" data-aos-duration="1750">Hi, I'm Owen Watt.</div>
+       <div className='text-xl mb-5'>Software Developer</div>
           <div className = "home-links">
-              <a href="https://github.com/Owen-Watt" className = "socials-btn" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
-{/*               <a href="/assets/Owen_Watt_CV.pdf" className = "socials-btn"><FontAwesomeIcon icon={faFile} /></a> */}
-              <a href="https://www.linkedin.com/in/owen-watt-b9334a227" className = "socials-btn" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+              <a href="https://github.com/Owen-Watt" className = "socials-btn shadow-xl bg-white text-gray-800 font-semibold hover:bg-gray-200" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+              <a href="https://www.linkedin.com/in/owen-watt-b9334a227" className = "socials-btn shadow-xl bg-white text-gray-800 font-semibold hover:bg-gray-200" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /></a>
           </div>
-    
           <Link to="projects-home" spy={true} smooth={true} offset={-70} duration={10} 
-            className="view-work-button shadow-lg shadow-blue-900/50 rounded-lg bg-white border"
+            className="view-work-button bg-white text-gray-800 font-semibold py-3 px-4 rounded-lg hover:bg-gray-100 shadow-xl"
             >View Projects</Link>  
       </div>
     
       
-      <div className = "projects-wrapper bg-gradient-to-b from-blue-200 via-blue-100 to-white" id="projects-home">
+      <div className = "projects-wrapper bg-[rgba(232,232,232,1)]" id="projects-home">
           <Project
             icon={faDiscord}
             title="Discord Bot"

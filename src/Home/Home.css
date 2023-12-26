@@ -15,7 +15,6 @@
 }
 .name{
     font-size: 3rem;
-    padding: 0.5em;
     color: var(--font-color)
 }
 .home-links{
@@ -28,7 +27,6 @@
     min-width: 2em;
     height: 2em;
     font-size: 2rem;
-    border: 2px solid var(--font-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,12 +35,13 @@
     transition: all 0.2s;
     text-decoration: none;
     gap: 10px;
+    
 }
 
-.socials-btn:hover{
+/* .socials-btn:hover{
     color: var(--theme-color);
     background-color: var(--font-color);
-}
+} */
 
 .view-work-button{
     position: absolute;
@@ -51,7 +50,8 @@
     align-items: center;
     height: 3.5rem;
     width: 12rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
     cursor: pointer;
     bottom: 200px;
     margin-left: auto;  /* centers it since it has position: absolute */
