@@ -3,8 +3,6 @@
 }
 .title-projects{
     font-size:3rem;
-    color: white;
-    background-color:#212529;
     height: 200px;
     width: 100%;
     display: flex;
@@ -24,7 +22,6 @@
     margin-top: 50px;
     margin-bottom: 50px;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 22px 50px 1px;
-    background-color: #252a2e;
 }
 .mobile-projects{
     display: flex;

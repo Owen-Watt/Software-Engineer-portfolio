@@ -3,7 +3,6 @@
     height: 55em;
     min-height: 100vh;
 /*     height: 10vh; */
-    background: var(--theme-color);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -52,11 +51,7 @@
     align-items: center;
     height: 3.5rem;
     width: 12rem;
-    border-radius: 5px;
-    border: 2px solid var(--font-color);
     font-size: 1.5rem;
-    background-color:var(--theme-color);
-    color: var(--font-color);
     cursor: pointer;
     bottom: 200px;
     margin-left: auto;  /* centers it since it has position: absolute */
@@ -66,15 +61,14 @@
     transition: all 0.3s;
     user-select: none;
 }
-.view-work-button:hover{
+/* .view-work-button:hover{
     background-color: var(--content-gray);
     border: 2px solid var(--content-gray);
     color: var(--theme-color);
-}
+} */
 
 /* home page content */
 .projects-wrapper{
-    background-color:#212529;
     width: 100%;
     height:fit-content;
     min-height: 41.7vh;

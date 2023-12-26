@@ -4,42 +4,30 @@ import './Navbar.css';
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
-  const [desktop, setDesktop] = useState({});
-  const [mobile, setMobile] = useState({});
+  const [showShadow, setShowShadow] = useState(false);
 
-   useEffect(() => {
-    const onScroll = () => {
-      // adding the shadow below the navbar if we scroll
-      if (window.scrollY > 10) {
-        setDesktop({
-          height: "4em",
-          boxShadow: "0 2px 5px rgb(0 0 0 / 0.2)"
-        })
-        setMobile({
-          height: "3em",
-          boxShadow: "0 2px 5px rgb(0 0 0 / 0.2)"
-        })
-      } else {
-        setDesktop({
-          height: "6em",
-          boxShadow: "0 0px 0px rgb(0 0 0 / 0.0)"
-        })
-        setMobile({
-          height: "4em",
-          boxShadow: "0 0px 0px rgb(0 0 0 / 0.0)"
-        })
-      }
-    };
-    // cleanup code
-    window.removeEventListener('scroll', onScroll);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []); 
+  useEffect(() => {
+      const handleScroll = () => {
+          if (window.scrollY > 10) {
+              setShowShadow(true);
+          } else {
+              setShowShadow(false);
+          }
+      };
+
+      // Add event listener
+      window.addEventListener('scroll', handleScroll);
+
+      // Clean up
+      return () => {
+          window.removeEventListener('scroll', handleScroll);
+      };
+  }, []);
 
   return (
     <>
       <div className="navMenu">
-          <div className={showMenu ? 'mobile-container navbar-open' : 'mobile-container navbar-closed'}  style={mobile}>
+          <div className={showMenu ? 'mobile-container navbar-open' : 'mobile-container navbar-closed'}  >
               <Link to="/" className= "navBar-title-mobile">&lt;/&gt; Owen</Link>
               <button className={showMenu ? 'icon open' : 'icon'} onClick={() => setShowMenu(!showMenu)}>
                 <div className="menu-burger"></div>
@@ -53,9 +41,9 @@ function Navbar() {
           </ul>
       </div>
 
-      <div className = "navBar" style={desktop}>
-          <div className="navBar-container">
-              <Link to="/" className="navBar-title">&lt;/&gt; Owen Watt</Link>
+      <div className = "navBar" >
+          <div className={`${showShadow ? 'shadow-md' : ''} navBar-container inset-0 bg-white bg-opacity-80 rounded-lg backdrop-blur-md p-2 transition duration-300`}>
+              <Link to="/" className="navBar-title border-r pr-10 bg-grey-100">&lt;/&gt; Owen Watt</Link>
               <ul>
                   <li><Link to="/" id = "navBar-links" >Home</Link></li>
                   <li><Link to="/about" id = "navBar-links">About</Link></li>
