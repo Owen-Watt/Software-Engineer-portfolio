@@ -1,28 +1,9 @@
-import { useEffect, React, useState } from 'react';
+import { React, useState } from 'react';
 import { Link } from "react-router-dom";
 import './Navbar.css';
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
-  const [showShadow, setShowShadow] = useState(false);
-
-  useEffect(() => {
-      const handleScroll = () => {
-          if (window.scrollY > 10) {
-              setShowShadow(true);
-          } else {
-              setShowShadow(false);
-          }
-      };
-
-      // Add event listener
-      window.addEventListener('scroll', handleScroll);
-
-      // Clean up
-      return () => {
-          window.removeEventListener('scroll', handleScroll);
-      };
-  }, []);
 
   return (
     <>
@@ -42,8 +23,8 @@ function Navbar() {
       </div>
 
       <div className = "navBar" >
-          <div className={`${showShadow ? 'shadow-md' : 'bg-[rgba(242,242,242,1)]'} navBar-container inset-0 border border-white bg-white bg-opacity-90 rounded-lg backdrop-blur-md p-2 transition duration-300`}>
-              <Link to="/" className="navBar-title border-r pr-10">Owen Watt.</Link>
+          <div className={`navBar-container shadow-xl bg-white text-gray-800 inset-0 border border-white bg-white bg-opacity-90 rounded-lg backdrop-blur-md p-2 transition duration-300`}>
+              <Link to="/" className="navBar-title border-r px-10 font-semibold">Owen Watt.</Link>
               <ul >
                   <li><Link to="/" id = "navBar-links" >Home</Link></li>
                   <li><Link to="/about" id = "navBar-links">About</Link></li>

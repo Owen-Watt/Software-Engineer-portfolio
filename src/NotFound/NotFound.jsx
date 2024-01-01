@@ -12,7 +12,7 @@ function NotFound() {
       <title>Not Found | Owen Watt</title>
     </Helmet>
 
-    <div className = "background">
+    <div className = "background bg-[rgba(232,232,232,1)]">
       <h1>404</h1>
       <p>Page does not exist.</p>
       <Link to="/" className = "homePage-button">Return to Home page</Link>

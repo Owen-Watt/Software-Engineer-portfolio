@@ -10,7 +10,7 @@ function Contact() {
         <title>Contact | Owen Watt</title>
     </Helmet>
 
-    <div className = "contact-contentBack">
+    <div className = "contact-contentBack bg-[rgba(232,232,232,1)]">
         <div className="contact-container">
             <div className="row">
                 <h1>Contact me</h1>

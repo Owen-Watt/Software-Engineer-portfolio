@@ -23,8 +23,8 @@ function Projects({ icon, margin, description, title, software, github, demo, de
     
     return (
     <>
-        <div className={`${isMobile ? "mobile-projects" : `projects ${margin}`} bg-white bg-opacity-70 text-black`} data-aos={fade}>   
-            <div className = "project-image-container">
+        <div className={`${isMobile ? "mobile-projects" : `projects ${margin}`} bg-white bg-opacity-50 text-black shadow-xl rounded-3xl`} data-aos={fade}>   
+            <div className = "project-image-container shadow-xl ">
                 <div className = "project-image">
                     <FontAwesomeIcon icon={icon} />
                 </div> 
@@ -33,9 +33,9 @@ function Projects({ icon, margin, description, title, software, github, demo, de
             <div className = "project-text-container">
                 <div className = "project-text">{description}</div>
                 <div className = "project-software-container">
-                    <div className = "project-software">{software[0]}</div>
-                    <div className = "project-software">{software[1]}</div>
-                    <div className = "project-software">{software[2]}</div>
+                    <div className = "project-software shadow-xl ">{software[0]}</div>
+                    <div className = "project-software shadow-xl ">{software[1]}</div>
+                    <div className = "project-software shadow-xl ">{software[2]}</div>
                 </div>
                 <div className = "project-buttons-container">
                     {

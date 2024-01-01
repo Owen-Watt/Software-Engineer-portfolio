@@ -46,7 +46,7 @@ function Home() {
           <Project
             icon={faSpotify}
             title="Spotify Statistics"
-            description="Displays a users Top Spotify tracks & artists. Allows users to create playlists with their top tracks. Currently need to be whitelisted to use."
+            description="Displays a users Top Spotify tracks & artists. Allows users to create playlists with their top tracks."
             software={["Spotify API", "Tailwind CSS", "React.js"]}
 /*             github='https://github.com/Owen-Watt/Portfolio-website' */
             fade="fade-left"

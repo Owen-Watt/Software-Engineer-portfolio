@@ -4,18 +4,19 @@ import Skill from "./Skill/Skill"
 
 function About() {
 
-  
   return (
     <>
       <Helmet>
         <title>About | Owen Watt</title>
       </Helmet>
 
-      <div className="about-contentBack">
+      <div className="about-contentBack bg-[rgba(232,232,232,1)]">
         <div className="about-container">
           <div className="title">About</div>
           <div className="description">
-          I am a 21-year-old college student enrolled at Maynooth University, where I am studying computer science. 
+          I am a 22-year-old in my final year studying computer science at Maynooth University, Ireland. 
+          <br></br>
+          I have 6 months experience as a Software Development Intern at Amazon Web Services (AWS).
           </div>
         </div>
         <div className='mt-10 w-[400px] h-[100px] rounded-lg p-2 flex items-center justify-between'>
@@ -36,14 +37,14 @@ function About() {
           </div>
         <div className="about-container">
           <div className="title">Skills</div>
-          <div className="skills-wrapper">
+          <div className="skills-wrapper shadow-xl rounded-3xl">
             <Skill name="HTML"></Skill>
             <Skill name="CSS"></Skill>
             <Skill name="Javascript"></Skill>
             <Skill name="Java"></Skill>
             <Skill name="React"></Skill>
           </div>
-          <div className="skills-wrapper">
+          <div className="skills-wrapper shadow-xl rounded-3xl">
             <Skill name="PostgreSQL"></Skill>
             <Skill name="mongoDB"></Skill>
             <Skill name="Heroku"></Skill>
