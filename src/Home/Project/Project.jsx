@@ -3,9 +3,10 @@ import '../Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "aos/dist/aos.css";
 import { useEffect, useState } from 'react';
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-function Projects({ icon, margin, description, title, software, github, demo, demoType}) {
+function Projects({ icon, margin, description, title, software, github, demo, demoType, stats}) {
 
 
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1100);
@@ -20,34 +21,42 @@ function Projects({ icon, margin, description, title, software, github, demo, de
     
     return (
     <>
-        <div className={`${isMobile ? "mobile-projects" : ``} transition duration-200 ease-in-out hover:bg-slate-800/70 hover:drop-shadow-lg  flex items-center justify-between flex-row p-12 w-4/6 text-white rounded-xl `}>   
-            <div className = "project-image-container shadow-xl w-[160px]">
-                <div className = "project-image">
+        <div className={`${isMobile ? "mobile-projects" : ``} flex items-center justify-between w-4/6 p-12 text-white hover:bg-slate-800/70 rounded-xl transition duration-200 ease-in-out hover:drop-shadow-lg`}>   
+            {/* Project Image */}
+            <div className="project-image-container shadow-xl w-[160px]">
+                <div className="project-image">
                     <FontAwesomeIcon icon={icon} />
                 </div> 
             </div>
-            <div className = "flex items-left flex-col pl-12">
-                <div className = "project-title">{title}</div>
-                <div className = "min-h-[60px] text-left text-l text-slate-300 w-5/6">{description}</div>
-                <div className = "flex  gap-3">
-                    <div className = "flex items-center rounded-full px-3 py-1 text-m font-medium leading-5 text-orange-500 bg-orange-200/10">{software[0]}</div>
-                    <div className = "flex items-center rounded-full px-3 py-1 text-m font-medium leading-5 text-orange-500 bg-orange-200/10">{software[1]}</div>
-                    <div className = "flex items-center rounded-full px-3 py-1 text-m font-medium leading-5 text-orange-500 bg-orange-200/10">{software[2]}</div>
+
+            {/* Project Details */}
+            <div className="flex-1 flex items-start justify-start flex-col gap-2 ml-4">
+                <div className="font-medium text-xl">{title}</div>
+                <div className="text-left text-lg text-slate-300/80">{description}</div>
+                {/* Additional stats */}
+                {stats &&
+                    <div className='flex items-center gap-2'>
+                        <FontAwesomeIcon icon={icon} />
+                        {stats}
+                    </div>
+                }
+                {/* Software tags */}
+                <div className="flex gap-3">
+                    {software.map((s) => {
+                        return <div key={s} className="flex items-center rounded-full px-3 py-1 text-orange-500 bg-orange-200/10">{s}</div>
+                    })}
                 </div>
             </div>
-            <div className = "">
-                    {
-                        //github && 
-                        <a className = "project-buttons" href={github}>
-                            GitHub
-                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" style={{marginLeft:"10px"}}/>
-                        </a>
-                    }
-                    <a className = "project-buttons" href={demo} target="_blank" rel="noreferrer">
-                        {demoType} 
-                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" style={{marginLeft:"10px"}}/>
-                    </a>
-                </div>
+
+            {/* Links */}
+            <div className="flex flex-col gap-5">
+                <a href={github} className='hover:cursor-pointer'>
+                    <FontAwesomeIcon icon={faGithub} size="2xl" />
+                </a>
+                <a href={demo} className='hover:cursor-pointer' target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faLink} size="xl" />
+                </a>
+            </div>
         </div>
     </>
   );

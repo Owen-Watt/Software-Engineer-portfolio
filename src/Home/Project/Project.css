@@ -9,18 +9,6 @@
     align-items: center;
     justify-content: center;
 }
-/* .projects{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 550px;
-    width: 450px;
-    padding: 2em;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-} */
 .mobile-projects{
     display: flex;
     flex-direction: column;
@@ -59,45 +47,6 @@
     align-items: center;
     justify-content: center; 
 }
-.project-title{
-    padding-top: 1em;
-    text-align: left;
-    font-size: 1.5rem;
-    font-weight: bold;
-    width: fit-content;
-}
-
-.project-buttons-container{
-    padding-top: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.project-buttons{
-    color: white;
-    background: none;
-    text-decoration: none;
-    padding: 0.1em 0.4em;
-    border: 1px solid white;
-    height: fit-content;
-    width: fit-content;
-    border-radius: 10px;
-    margin: 0.5rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s;
-    user-select: none; /* supported by Chrome and Opera */
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-}
-.project-buttons:hover{
-    opacity: 60%;
-}
-
 
 @media only screen and (max-width: 913px) { 
     .projects{
