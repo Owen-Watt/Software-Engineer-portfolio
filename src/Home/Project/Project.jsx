@@ -1,15 +1,12 @@
 import './Project.css'
 import '../Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from 'react';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
-function Projects({ icon, margin, description, title, software, github, demo, demoType, fade}) {
-    useEffect(() =>{
-        Aos.init({ duration: 750 });
-    }, []);
+function Projects({ icon, margin, description, title, software, github, demo, demoType}) {
+
 
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1100);
 
@@ -23,32 +20,34 @@ function Projects({ icon, margin, description, title, software, github, demo, de
     
     return (
     <>
-        <div className={`${isMobile ? "mobile-projects" : `projects ${margin}`} bg-white bg-opacity-80 text-black shadow-xl rounded-3xl`} data-aos={fade}>   
-            <div className = "project-image-container shadow-xl ">
+        <div className={`${isMobile ? "mobile-projects" : ``} transition duration-200 ease-in-out hover:bg-slate-800/70 hover:drop-shadow-lg  flex items-center justify-between flex-row p-12 w-4/6 text-white rounded-xl `}>   
+            <div className = "project-image-container shadow-xl w-[160px]">
                 <div className = "project-image">
                     <FontAwesomeIcon icon={icon} />
                 </div> 
             </div>
-            <div className = "project-title">{title}</div>
-            <div className = "project-text-container">
-                <div className = "project-text">{description}</div>
-                <div className = "project-software-container">
-                    <div className = "project-software shadow-xl ">{software[0]}</div>
-                    <div className = "project-software shadow-xl ">{software[1]}</div>
-                    <div className = "project-software shadow-xl ">{software[2]}</div>
+            <div className = "flex items-left flex-col pl-12">
+                <div className = "project-title">{title}</div>
+                <div className = "min-h-[60px] text-left text-l text-slate-300 w-5/6">{description}</div>
+                <div className = "flex  gap-3">
+                    <div className = "flex items-center rounded-full px-3 py-1 text-m font-medium leading-5 text-orange-500 bg-orange-200/10">{software[0]}</div>
+                    <div className = "flex items-center rounded-full px-3 py-1 text-m font-medium leading-5 text-orange-500 bg-orange-200/10">{software[1]}</div>
+                    <div className = "flex items-center rounded-full px-3 py-1 text-m font-medium leading-5 text-orange-500 bg-orange-200/10">{software[2]}</div>
                 </div>
-                <div className = "project-buttons-container">
+            </div>
+            <div className = "">
                     {
-                        github && 
+                        //github && 
                         <a className = "project-buttons" href={github}>
-                            GitHub<FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" style={{marginLeft:"10px"}}/>
+                            GitHub
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" style={{marginLeft:"10px"}}/>
                         </a>
                     }
-                    <a className = "project-buttons" href={demo} target="_blank" rel="noreferrer">{demoType} 
+                    <a className = "project-buttons" href={demo} target="_blank" rel="noreferrer">
+                        {demoType} 
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} size="xs" style={{marginLeft:"10px"}}/>
                     </a>
                 </div>
-            </div>
         </div>
     </>
   );

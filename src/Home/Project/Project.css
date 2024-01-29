@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
 }
-.projects{
+/* .projects{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,11 +17,10 @@
     height: 550px;
     width: 450px;
     padding: 2em;
-
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-}
+} */
 .mobile-projects{
     display: flex;
     flex-direction: column;
@@ -49,7 +48,7 @@
     justify-content: center;
     width: 10rem;
     height: 10rem;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 100%;
 }
 .project-image{
@@ -62,24 +61,12 @@
 }
 .project-title{
     padding-top: 1em;
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
     font-weight: bold;
     width: fit-content;
 }
-.project-text-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-}
-.project-text{
-    margin: 0.25em;
-    font-size: 1.25rem;
-    min-height: 60px; /* min height to make things even on both sides */
-    display:flex;
-}
+
 .project-buttons-container{
     padding-top: 1em;
     display: flex;
@@ -87,14 +74,14 @@
     justify-content: center;
 }
 .project-buttons{
-    color: black;
+    color: white;
     background: none;
     text-decoration: none;
     padding: 0.1em 0.4em;
-    border: 2px solid black;
+    border: 1px solid white;
     height: fit-content;
     width: fit-content;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 0.5rem;
     font-size: 1.5rem;
     cursor: pointer;
@@ -109,27 +96,6 @@
 }
 .project-buttons:hover{
     opacity: 60%;
-}
-.project-software-container{
-    padding-top: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.project-software{
-    color: white;
-    background-color: rgb(70, 70, 70);
-    text-decoration: none;
-    padding: 0.2em 0.5em;
-    border: 0;
-    height: fit-content;
-    width: fit-content;
-    border-radius: 5px;
-    margin: 0.5rem;
-    font-size: 1.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 

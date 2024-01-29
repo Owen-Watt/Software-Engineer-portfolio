@@ -22,8 +22,8 @@ function Navbar() {
           </ul>
       </div>
 
-      <div className = "navBar bg-slate-900" >
-          <div className={`navBar-container w-full shadow-xl text-gray-800 inset-0  rounded-lg backdrop-blur-md p-2 transition duration-300`}>
+      <div className = "navBar bg-slate-900 shadow-xl" >
+          <div className={`navBar-container w-full  text-gray-800 inset-0  rounded-lg backdrop-blur-md p-2 transition duration-300`}>
               <Link to="/" className="navBar-title px-10 font-semibold text-white">Owen Watt.</Link>
               <ul className='text-white'>
                   <li><Link to="/" id = "navBar-links" >Home</Link></li>

@@ -6,8 +6,14 @@ import { faHouse, faCloud } from '@fortawesome/free-solid-svg-icons'
 import { Helmet } from "react-helmet";
 import { Link } from "react-scroll";
 import Project from './Project/Project'
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 function Home() {
+  useEffect(() =>{
+    Aos.init({ duration: 750 });
+  } , []);
 
   return (
     <>
@@ -16,19 +22,23 @@ function Home() {
       </Helmet>
 
       <div className = "explore bg-slate-900 text-white">
-       <div className = "name " data-aos="fade-down" data-aos-duration="1750">Hi, I'm Owen Watt.</div>
-       <div className='text-xl mb-5'>Software Developer</div>
-          <div className = "home-links">
-              <a href="https://github.com/Owen-Watt" className = "socials-btn shadow-xl border text-white font-semibold hover:bg-slate-500" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
-              <a href="https://www.linkedin.com/in/owen-watt-b9334a227" className = "socials-btn border shadow-xl font-semibold hover:bg-slate-500" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+        <div className='w-3/6 h-5/6 flex justify-center flex-col gap-5'>
+          <div className = "text-7xl font-mono" data-aos="fade-down" data-aos-duration="1750">Hi, I'm Owen Watt.</div>
+          <div className='text-xl my-7 text-slate-300/90 font-sans w-3/6'>
+            I'm a 22 year old software engineer currently in my fourth, and final year studying Computer Science. 
           </div>
-          <Link to="projects-home" spy={true} smooth={true} offset={-70} duration={10} 
-            className="view-work-button text-white border-white border font-semibold py-3 px-4 rounded-lg hover:bg-slate-500 shadow-xl"
-            >View Projects</Link>  
+          {/* <div className = "home-links">
+            <a href="https://github.com/Owen-Watt" className = "socials-btn shadow-xl border text-white font-semibold hover:bg-slate-500" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+            <a href="https://www.linkedin.com/in/owen-watt-b9334a227" className = "socials-btn border shadow-xl font-semibold hover:bg-slate-500" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+        </div> */}
+        <Link to="projects-home" spy={true} smooth={true} offset={-70} duration={10} 
+          className="text-orange-500 border-orange-500 border font-semibold py-4 px-8 rounded-lg hover:bg-slate-500 shadow-xl hover:cursor-pointer w-fit"
+          >View Projects</Link>  
+        </div>
       </div>
     
       
-      <div className = "projects-wrapper bg-slate-900" id="projects-home">
+      <div className = "flex flex-col bg-slate-900 items-center justify-center" id="projects-home">
           <Project
             icon={faDiscord}
             title="Discord Bot"
