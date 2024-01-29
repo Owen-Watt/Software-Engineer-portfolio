@@ -10,7 +10,7 @@ function About() {
         <title>About | Owen Watt</title>
       </Helmet>
 
-      <div className="about-contentBack bg-[rgba(232,232,232,1)]">
+      <div className="about-contentBack bg-slate-900 text-white">
         <div className="about-container">
           <div className="title">About</div>
           <div className="description">
@@ -37,14 +37,14 @@ function About() {
           </div> */}
         <div className="about-container">
           <div className="title">Skills</div>
-          <div className="skills-wrapper shadow-xl rounded-3xl">
+          <div className="skills-wrapper shadow-xl rounded-3xl text-black">
             <Skill name="Java"></Skill>
             <Skill name="React"></Skill>
             <Skill name="HTML"></Skill>
             <Skill name="CSS"></Skill>
             <Skill name="Javascript"></Skill>
           </div>
-          <div className="skills-wrapper shadow-xl rounded-3xl">
+          <div className="skills-wrapper shadow-xl rounded-3xl text-black">
             <Skill name="DynamoDB"></Skill>
             <Skill name="PostgreSQL"></Skill>
             <Skill name="Node"></Skill>

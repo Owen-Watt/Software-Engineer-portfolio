@@ -2,7 +2,6 @@
     padding-top: 5em;
     width: 100%;
     height: 100vh;
-    color: black;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -13,7 +12,6 @@ h1 {
     font-family: 'Poppins', sans-serif, 'arial';
     font-weight: 600;
     font-size: 60px;
-    color: black;
     text-align: center;
 }
 
@@ -111,7 +109,6 @@ input[type=checkbox]:checked + label {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    background: white;
     box-shadow: 0 1px 2px rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
 }
 

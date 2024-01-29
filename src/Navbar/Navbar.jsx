@@ -22,12 +22,13 @@ function Navbar() {
           </ul>
       </div>
 
-      <div className = "navBar" >
-          <div className={`navBar-container shadow-xl bg-white text-gray-800 inset-0 border border-white bg-white bg-opacity-90 rounded-lg backdrop-blur-md p-2 transition duration-300`}>
-              <Link to="/" className="navBar-title border-r px-10 font-semibold">Owen Watt.</Link>
-              <ul >
+      <div className = "navBar bg-slate-900" >
+          <div className={`navBar-container w-full shadow-xl text-gray-800 inset-0  rounded-lg backdrop-blur-md p-2 transition duration-300`}>
+              <Link to="/" className="navBar-title px-10 font-semibold text-white">Owen Watt.</Link>
+              <ul className='text-white'>
                   <li><Link to="/" id = "navBar-links" >Home</Link></li>
-                  <li><Link to="/about" id = "navBar-links">About</Link></li>
+                  <li><Link to="/about" id = "navBar-links">Experience</Link></li>
+                  <li><Link to="/about" id = "navBar-links">Projects</Link></li>
 {/*                   <li><a href="/assets/Owen_Watt_CV.pdf" id = "navBar-links" >Resume</a></li> */}
                   <li><Link to="/contact" id = "navBar-links">Contact</Link></li>
               </ul>

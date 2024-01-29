@@ -16,15 +16,13 @@
     align-items: center;
 }
 .navBar-container{
-    margin-left: 15%;
-    margin-right: 15%;
-    height: 60%;
+    height: 70%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 50px;
 }
 .navBar-title{
-    color: var(--navbar-font-color);
     font-size: 1.4rem;
     text-decoration: none;
     user-select: none; /* supported by Chrome and Opera */
@@ -44,8 +42,7 @@
     position: relative;
 }
 #navBar-links{
-    color: var(--navbar-font-color);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-decoration: none;
     transition: all 0.3s;
     padding: 0.6em;
