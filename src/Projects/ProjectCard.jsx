@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-function ProjectCard({ icon, description, title, software, github, demo, demoType, stats}) {
+function ProjectCard({ imageName, description, title, software, github, demo, demoType, stats, icon}) {
 
 
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1100);
@@ -20,12 +20,10 @@ function ProjectCard({ icon, description, title, software, github, demo, demoTyp
     
     return (
     <>
-        <div className={`${isMobile ? "mobile-projects" : ``} flex items-center justify-between w-4/6 p-10 text-white hover:bg-slate-800/70 rounded-xl transition duration-200 ease-in-out hover:drop-shadow-lg`}>   
+        <div className="flex items-start justify-between w-4/6 p-10 text-white hover:bg-slate-800/70 rounded-xl transition duration-200 hover:drop-shadow-lg">   
             {/* Project Image */}
-            <div className="project-image-container shadow-xl w-[160px]">
-                <div className="project-image">
-                    <FontAwesomeIcon icon={icon} />
-                </div> 
+            <div className="rounded border-2 max-w-[175px] border-slate-200/10 transition sm:col-span-2 sm:translate-y-1 sm-1">
+                <img src={`/images/${imageName}`}/>
             </div>
 
             {/* Project Details */}
@@ -48,7 +46,7 @@ function ProjectCard({ icon, description, title, software, github, demo, demoTyp
             </div>
 
             {/* Links */}
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 items-center h-full">
                 <a href={github} className='hover:cursor-pointer'>
                     <FontAwesomeIcon icon={faGithub} size="2xl" />
                 </a>

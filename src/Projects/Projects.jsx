@@ -12,7 +12,7 @@ function Projects() {
       <div className = "flex flex-col bg-slate-900 items-center justify-center pb-20" id="projects">
         <div className="text-white w-4/6 px-2 pb-4 text-4xl font-medium border-b font-mono">Projects</div>
           <ProjectCard
-            icon={faDiscord}
+            imageName = "discordbot.png"
             title="Discord Bot"
             description="A Discord bot with custom commands that utilises a database to keep track of settings & statistics. Users can set custom messages to send on events such as new members joining or leaving. "
             software={["Discord.js", "Node.js", "MongoDB", "Heroku"]}
@@ -20,12 +20,13 @@ function Projects() {
             demo="https://tokyobot.xyz"
             demoType="Website"
             stats="340+ Servers"
+            icon={faDiscord}
           />
 
           <div className = "mobile-horizontal-line"></div>
 
           <ProjectCard
-            icon={faCloud}
+            imageName = "home.PNG"
             title="Software Engineer Portfolio Website"
             description="Portfolio website made from scratch with React.js and Tailwind CSS to display everything about me as a portfolio. "
             software={["HTML", "Tailwind CSS", "React.js", "Netlify"]}
@@ -36,7 +37,7 @@ function Projects() {
           <div className = "mobile-horizontal-line"></div>
 
           <ProjectCard
-            icon={faSpotify}
+            imageName = "toptracklist.png"
             title="Spotify Statistics"
             description="A web application that displays a users top tracks and artists on Spotify in the selected time frame. 
             Can create create playlists for the users with their most listened to tracks in the click of a button. 
