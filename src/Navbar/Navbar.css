@@ -37,24 +37,6 @@
     margin: 0;
     padding: 0;
 }
-.navBar li{
-    padding: 0rem 1.5rem;
-    position: relative;
-}
-#navBar-links{
-    font-size: 1.1rem;
-    text-decoration: none;
-    transition: all 0.3s;
-    padding: 0.6em;
-    border-radius: 10px;
-    user-select: none; /* supported by Chrome and Opera */
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-}
-#navBar-links:hover { 
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 8px 0px;
-}
 .navMenu{
     display: none;
 }

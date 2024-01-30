@@ -6,18 +6,9 @@ import Form from './Form/Form'
 function Contact() {
   return (
     <> 
-    <Helmet>
-        <title>Contact | Owen Watt</title>
-    </Helmet>
-
-    <div className = "contact-contentBack bg-slate-900">
-        <div className="contact-container bg-slate-300">
-            <div className="text-black">
-                <h1>Contact me</h1>
-            </div>
-            <Form></Form>
-        </div>
-        
+    <div className = "flex flex-col bg-slate-900 items-center justify-center pb-20" id="contact">
+        <div className="text-white w-4/6 px-2 pb-4 text-4xl font-medium border-b font-mono">Contact</div>
+        <Form></Form>  
     </div>
 
     </>

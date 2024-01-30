@@ -5,7 +5,9 @@ import { Link } from "react-scroll";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
-import Projects from './Projects';
+import Projects from '../Projects/Projects';
+import Experience from '../Experience/Experience';
+import Contact from '../Contact/Contact';
 
 function Home() {
   useEffect(() =>{
@@ -28,13 +30,15 @@ function Home() {
             <a href="https://github.com/Owen-Watt" className = "socials-btn shadow-xl border text-white font-semibold hover:bg-slate-500" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
             <a href="https://www.linkedin.com/in/owen-watt-b9334a227" className = "socials-btn border shadow-xl font-semibold hover:bg-slate-500" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /></a>
         </div> */}
-        <Link to="projects-home" spy={true} smooth={true} offset={-70} duration={10} 
-          className="text-orange-500 border-orange-500 border font-semibold py-4 px-8 rounded-lg hover:bg-slate-500 shadow-xl hover:cursor-pointer w-fit"
+        <Link to="projects" spy={true} smooth={true} offset={-120} duration={10} 
+          className="text-orange-500 border-orange-500 border font-semibold py-4 px-8 rounded-lg hover:bg-slate-500 transition duration-200 hover:cursor-pointer w-fit transition duration-200"
           >View Projects</Link>  
         </div>
       </div>
 
       <Projects/>
+      <Experience/>
+      <Contact/>
     </>
   );
 }

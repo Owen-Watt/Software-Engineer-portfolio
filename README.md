@@ -1,6 +1,6 @@
 # React Portfolio Website
 
-A Portfolio website made with React.js
+A Portfolio website made with React.js and Tailwind CSS. There is currently still CSS files being used, these are slowly being converted to tailwind CSS.
 
 ## Usage
 ### Installing
@@ -18,8 +18,11 @@ npm install
 ### Home
 ![Home page](/public/images/home.PNG "This is the home page.")
 
-### Project component
+### Project components
 ![Projects component](/public/images/project.PNG "This is the Project component.")
+
+### Experience components
+![Experience component](/public/images/experience.PNG "This is the Experience component.")
 
 ### Contact page
 ![Contact page](/public/images/contact.PNG "This is the contact page.")

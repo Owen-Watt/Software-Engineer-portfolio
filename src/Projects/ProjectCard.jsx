@@ -1,12 +1,11 @@
 import './Project.css'
-import '../Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "aos/dist/aos.css";
 import { useEffect, useState } from 'react';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-function Projects({ icon, margin, description, title, software, github, demo, demoType, stats}) {
+function ProjectCard({ icon, margin, description, title, software, github, demo, demoType, stats}) {
 
 
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1100);
@@ -21,7 +20,7 @@ function Projects({ icon, margin, description, title, software, github, demo, de
     
     return (
     <>
-        <div className={`${isMobile ? "mobile-projects" : ``} flex items-center justify-between w-4/6 p-12 text-white hover:bg-slate-800/70 rounded-xl transition duration-200 ease-in-out hover:drop-shadow-lg`}>   
+        <div className={`${isMobile ? "mobile-projects" : ``} flex items-center justify-between w-4/6 p-10 text-white hover:bg-slate-800/70 rounded-xl transition duration-200 ease-in-out hover:drop-shadow-lg`}>   
             {/* Project Image */}
             <div className="project-image-container shadow-xl w-[160px]">
                 <div className="project-image">
@@ -62,4 +61,4 @@ function Projects({ icon, margin, description, title, software, github, demo, de
   );
 }
 
-export default Projects;
+export default ProjectCard;
