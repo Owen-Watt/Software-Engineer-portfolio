@@ -14,9 +14,9 @@ function Navbar() {
 
   return (
     <>
-      <div className="navMenu">
-          <div className={showMenu ? 'mobile-container navbar-open' : 'mobile-container navbar-closed'}  >
-              <Link to="/" className= "navBar-title-mobile">Owen</Link>
+      <div className="fixed z-1 height-[5rem] block w-full bg-slate-900">
+          <div className={showMenu ? ' navbar-open' : ' navbar-closed' + " shadow-xl w-full h-[5rem] flex justify-between items-center text-white text-xl"}  >
+              <Link to="/" className= "h-fit px-8 flex items-center">Owen Watt</Link>
               <button className={showMenu ? 'icon open' : 'icon'} onClick={() => setShowMenu(!showMenu)}>
                 <div className="menu-burger"></div>
               </button>  
