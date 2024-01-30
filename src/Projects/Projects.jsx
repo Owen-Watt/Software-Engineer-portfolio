@@ -14,11 +14,9 @@ function Projects() {
           <ProjectCard
             icon={faDiscord}
             title="Discord Bot"
-            description="A Discord bot with custom commands that utilises a database to keep track of settings & statistics."
+            description="A Discord bot with custom commands that utilises a database to keep track of settings & statistics. Users can set custom messages to send on events such as new members joining or leaving. "
             software={["Discord.js", "Node.js", "MongoDB", "Heroku"]}
-            github='https://github.com/Owen-Watt/discord-bot'
-            fade="fade-right"
-            margin="mr-50"
+            github='https://github.com/Owen-Watt/Discord-Bot'
             demo="https://tokyobot.xyz"
             demoType="Website"
             stats="340+ Servers"
@@ -29,11 +27,9 @@ function Projects() {
           <ProjectCard
             icon={faCloud}
             title="Software Engineer Portfolio Website"
-            description="Portfolio website made from scratch with React.js to display my portfolio."
-            software={["HTML", "Tailwind CSS", "React.js"]}
-            github='https://github.com/Owen-Watt/Portfolio-website'
-            fade="fade-left"
-            margin="ml-50"
+            description="Portfolio website made from scratch with React.js and Tailwind CSS to display everything about me as a portfolio. "
+            software={["HTML", "Tailwind CSS", "React.js", "Netlify"]}
+            github='https://github.com/Owen-Watt/Software-Engineer-portfolio'
             demo="https://owenwatt.dev"
             demoType="Website"
           />
@@ -42,11 +38,11 @@ function Projects() {
           <ProjectCard
             icon={faSpotify}
             title="Spotify Statistics"
-            description="Displays a users Top Spotify tracks & artists. Allows users to create playlists with their top tracks."
-            software={["Spotify API", "Tailwind CSS", "React.js"]}
-            github='https://github.com/Owen-Watt/Portfolio-website'
-            fade="fade-left"
-            margin="ml-50"
+            description="A web application that displays a users top tracks and artists on Spotify in the selected time frame. 
+            Can create create playlists for the users with their most listened to tracks in the click of a button. 
+            Currently emails need to be whitelisted to use this though."
+            software={["Spotify API", "Tailwind CSS", "React.js", "Netlify"]}
+            github='https://github.com/Owen-Watt/'
             demo="https://toptracklist.com"
             demoType="Website"
           />

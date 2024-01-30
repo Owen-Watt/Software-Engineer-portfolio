@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-function ProjectCard({ icon, margin, description, title, software, github, demo, demoType, stats}) {
+function ProjectCard({ icon, description, title, software, github, demo, demoType, stats}) {
 
 
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1100);
@@ -40,7 +40,7 @@ function ProjectCard({ icon, margin, description, title, software, github, demo,
                     </div>
                 }
                 {/* Software tags */}
-                <div className="flex gap-3">
+                <div className="flex gap-3 mt-3">
                     {software.map((s) => {
                         return <div key={s} className="flex items-center rounded-full px-3 py-1 text-orange-500 bg-orange-200/10">{s}</div>
                     })}
