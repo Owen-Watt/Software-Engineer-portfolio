@@ -4,7 +4,7 @@ function Job({ start, finish, title, description, software }) {
     <>
         <div className="flex items-center justify-between w-4/6 py-10 px-8 text-white hover:bg-slate-800/70 rounded-xl transition duration-200 ease-in-out hover:drop-shadow-lg">   
             {/* Job TimeLine */}
-            <div className="mb-2 mt-1 text-s font-semibold uppercase tracking-wide text-slate-300 sm:col-span-2">
+            <div className="mb-2 mt-1 text-s font-semibold uppercase tracking-wide text-slate-300 sm:col-span-2 min-w-[175px]">
                 {start} - {finish}
             </div>
 
