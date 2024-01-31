@@ -22,7 +22,7 @@ npm install
 ![Projects component](/public/images/project.PNG "This is the Project component.")
 
 ### Experience components
-![Experience component](/public/images/experience.PNG "This is the Experience component.")
+![Experience component](/public/images/experience.png "This is the Experience component.")
 
 ### Contact page
 ![Contact page](/public/images/contact.PNG "This is the contact page.")
