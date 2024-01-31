@@ -1,35 +1,22 @@
-import './Project.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "aos/dist/aos.css";
-import { useEffect, useState } from 'react';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function ProjectCard({ imageName, description, title, software, github, demo, demoType, stats, icon}) {
-
-
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 1100);
-
-    useEffect(() => {
-        window.addEventListener("resize", () => {
-            const ismobile = window.innerWidth < 1100;
-            // if not already in mobile mode, set it to mobile mode
-            if (ismobile !== isMobile) setIsMobile(ismobile);
-        }, false);
-    }, [isMobile]);
     
     return (
     <>
-        <div className="flex items-start justify-between w-4/6 p-10 text-white hover:bg-slate-800/70 rounded-xl transition duration-200 hover:drop-shadow-lg">   
+        <div className="flex flex-col md:flex-row items-start w-full lg:w-4/6 py-10 px-5 lg:p-10 text-white hover:bg-slate-800/70 rounded-md transition duration-200 hover:drop-shadow-lg">   
             {/* Project Image */}
-            <div className="rounded border-2 max-w-[175px] border-slate-200/10 transition sm:col-span-2 sm:translate-y-1 sm-1">
-                <img src={`/images/${imageName}`}/>
+            <div className="rounded border-2 max-w-[175px] border-slate-200/10 transition sm:col-span-2 sm:translate-y-1 sm-1 hidden lg:block">
+                <img alt="display of the project" src={`/images/${imageName}`}/>
             </div>
 
             {/* Project Details */}
             <div className="flex-1 flex items-start justify-start flex-col gap-2 ml-4">
                 <div className="font-medium text-xl">{title}</div>
-                <div className="text-left text-lg text-slate-300/80">{description}</div>
+                <div className="text-left text-lg text-slate-300/80 w-full md:w-11/12 ">{description}</div>
                 {/* Additional stats */}
                 {stats &&
                     <div className='flex items-center gap-2'>
@@ -38,7 +25,7 @@ function ProjectCard({ imageName, description, title, software, github, demo, de
                     </div>
                 }
                 {/* Software tags */}
-                <div className="flex gap-3 mt-3">
+                <div className="flex gap-3 mt-3 flex-wrap">
                     {software.map((s) => {
                         return <div key={s} className="flex items-center rounded-full px-3 py-1 text-orange-500 bg-orange-200/10">{s}</div>
                     })}
@@ -46,7 +33,7 @@ function ProjectCard({ imageName, description, title, software, github, demo, de
             </div>
 
             {/* Links */}
-            <div className="flex flex-col gap-5 items-center h-full">
+            <div className="flex flex-row md:flex-col pt-6 md:p-0 w-full md:w-fit justify-center gap-5 md:h-[140px]">
                 <a href={github} className='hover:cursor-pointer'>
                     <FontAwesomeIcon icon={faGithub} size="2xl" />
                 </a>

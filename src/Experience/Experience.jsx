@@ -6,7 +6,7 @@ function Experience() {
   return (
     <>
       <div className = "flex flex-col bg-slate-900 items-center justify-center pb-20" id="experience">
-        <div className="text-white w-4/6 px-2 pb-4 text-4xl font-medium border-b font-mono">Experience</div>
+        <div className="text-white w-5/6 lg:w-4/6 px-2 pb-4 mb-12 text-4xl font-medium border-b font-mono">Experience</div>
         <Job 
             start="April" 
             finish="Oct 2023" 

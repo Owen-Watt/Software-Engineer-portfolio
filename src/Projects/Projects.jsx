@@ -1,6 +1,5 @@
 import '../index.css';
-import {  faDiscord, faSpotify, faWebflow } from '@fortawesome/free-brands-svg-icons'
-import { faHouse, faCloud } from '@fortawesome/free-solid-svg-icons'
+import {  faDiscord } from '@fortawesome/free-brands-svg-icons'
 import ProjectCard from './ProjectCard'
 
 
@@ -10,7 +9,7 @@ function Projects() {
   return (
     <>
       <div className = "flex flex-col bg-slate-900 items-center justify-center pb-20" id="projects">
-        <div className="text-white w-4/6 px-2 pb-4 text-4xl font-medium border-b font-mono">Projects</div>
+        <div className="text-white w-5/6 lg:w-4/6 px-2 pb-4 mb-12 text-4xl font-medium border-b font-mono">Projects</div>
           <ProjectCard
             imageName = "discordbot.png"
             title="Discord Bot"
@@ -23,8 +22,6 @@ function Projects() {
             icon={faDiscord}
           />
 
-          <div className = "mobile-horizontal-line"></div>
-
           <ProjectCard
             imageName = "home.PNG"
             title="Software Engineer Portfolio Website"
@@ -34,7 +31,6 @@ function Projects() {
             demo="https://owenwatt.dev"
             demoType="Website"
           />
-          <div className = "mobile-horizontal-line"></div>
 
           <ProjectCard
             imageName = "toptracklist.png"
