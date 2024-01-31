@@ -39,7 +39,7 @@ function Projects() {
             Can create create playlists for the users with their most listened to tracks in the click of a button. 
             Currently emails need to be whitelisted to use this though."
             software={["Spotify API", "Tailwind CSS", "React.js", "Netlify"]}
-            github='https://github.com/Owen-Watt/'
+            /* github='https://github.com/Owen-Watt/' */
             demo="https://toptracklist.com"
             demoType="Website"
           />

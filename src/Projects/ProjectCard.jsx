@@ -34,9 +34,12 @@ function ProjectCard({ imageName, description, title, software, github, demo, de
 
             {/* Links */}
             <div className="flex flex-row md:flex-col pt-6 md:p-0 w-full md:w-fit justify-center gap-5 md:h-[140px]">
-                <a href={github} className='hover:cursor-pointer'>
-                    <FontAwesomeIcon icon={faGithub} size="2xl" />
-                </a>
+                {
+                    github && 
+                    <a href={github} className='hover:cursor-pointer'>
+                        <FontAwesomeIcon icon={faGithub} size="2xl" />
+                    </a>
+                }
                 <a href={demo} className='hover:cursor-pointer' target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faLink} size="xl" />
                 </a>
