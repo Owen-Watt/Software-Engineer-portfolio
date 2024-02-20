@@ -8,8 +8,8 @@ function Projects() {
 
   return (
     <>
-      <div className = "flex flex-col bg-slate-900 items-center justify-center pb-20" id="projects">
-        <div className="text-white w-5/6 lg:w-4/6 px-2 pb-4 mb-12 text-4xl font-medium border-b font-mono">Projects</div>
+      <div className = "flex flex-col bg-white dark:bg-slate-900 items-center justify-center pb-20" id="projects">
+        <div className="dark:text-white w-5/6 lg:w-4/6 px-2 pb-4 mb-12 text-4xl font-medium border-b font-mono">Projects</div>
           <ProjectCard
             imageName = "discordbot.png"
             title="Discord Bot"
@@ -18,7 +18,7 @@ function Projects() {
             github='https://github.com/Owen-Watt/Discord-Bot'
             demo="https://tokyobot.xyz"
             demoType="Website"
-            stats="340+ Servers"
+            stats="350+ Servers"
             icon={faDiscord}
           />
 

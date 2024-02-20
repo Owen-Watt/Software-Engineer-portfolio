@@ -4,7 +4,6 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     top: -10px;
     -webkit-transition: all 0.225s ease;
     transition: all 0.225s ease;
-    color: rgb(203 213 225);
 }
 
 .contact-input{ 
@@ -15,7 +14,6 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 }
 
 .contact-input label {
-    color: white;
     padding: 1.3rem 30px 1rem 30px;
     position: absolute;
     top: 10px;
@@ -32,7 +30,6 @@ textarea {
     font-size: 1rem;
     border-radius: 4px;
     background: transparent;
-    color: white;
 }
 
 textarea {
@@ -59,7 +56,6 @@ textarea:focus ~ span {
     transition: all 0.2s ease;
 }
 input[type=checkbox] + label {
-  color: #ccc;
   font-style: italic;
 } 
 
