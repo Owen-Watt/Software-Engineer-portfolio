@@ -27,7 +27,7 @@ function ProjectCard({ imageName, description, title, software, github, demo, de
                     {/* Software tags */}
                     <div className="flex gap-3 mt-3 flex-wrap">
                         {software.map((s) => {
-                            return <div key={s} className="flex items-center rounded-full px-3 py-1 text-blue-800 dark:text-orange-500 bg-blue-100 dark:bg-orange-200/10">{s}</div>
+                            return <div key={s} className="flex items-center rounded-full px-3 py-1 text-blue-800 bg-blue-100 dark:text-orange-500  dark:bg-orange-200/10">{s}</div>
                         })}
                     </div>
                 </div>
