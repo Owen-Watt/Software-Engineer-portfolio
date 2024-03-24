@@ -11,6 +11,13 @@ function Projects() {
       <div className = "flex flex-col bg-white dark:bg-slate-900 items-center justify-center pb-20" id="projects">
         <div className="dark:text-white w-5/6 lg:w-4/6 px-2 pb-4 mb-12 text-4xl font-medium border-b font-mono">Projects</div>
           <ProjectCard
+              imageName = "fyp.png"
+              title="Project Allocation System - Final Year Project"
+              description="A full-stack web application that optimizes the project allocation system for students by using a modified Gale-Shapley algorithm, based on users top five preferences.
+              It combines Java SpringBoot for secure backend processes and React.js for a responsive user interface."
+              software={["Java", "SpringBoot", "React.js", "JWT", "MongoDB", "Gale-Shapley algorithm"]}
+            />
+          <ProjectCard
             imageName = "discordbot.png"
             title="Discord Bot"
             description="A Discord bot with custom commands that utilises a database to keep track of settings & statistics. Users can set custom messages to send on events such as new members joining or leaving. "
@@ -18,7 +25,7 @@ function Projects() {
             github='https://github.com/Owen-Watt/Discord-Bot'
             demo="https://tokyobot.xyz"
             demoType="Website"
-            stats="350+ Servers"
+            stats="370+ Servers"
             icon={faDiscord}
           />
 

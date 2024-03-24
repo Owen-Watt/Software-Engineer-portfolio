@@ -40,9 +40,12 @@ function ProjectCard({ imageName, description, title, software, github, demo, de
                             <FontAwesomeIcon icon={faGithub} size="2xl" />
                         </a>
                     }
-                    <a href={demo} className='hover:cursor-pointer' target="_blank" rel="noreferrer">
+                    {
+                        demo && 
+                        <a href={demo} className='hover:cursor-pointer' target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={faLink} size="xl" />
-                    </a>
+                        </a>
+                    }             
                 </div>
             </div>
         </>
